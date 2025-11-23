@@ -1,0 +1,203 @@
+pre {
+    font-family: Title, serif;
+    font-optical-sizing: initial;
+    font-stretch: expanded;
+    font-style: normal;
+    margin: 0;
+    text-wrap: wrap;
+    width: auto;
+}
+
+.coreTeamTitle {
+    font-family: Title, serif;
+    width: 80%;
+    padding-top: 50px;
+    background: var(--white-theme);
+    color: var(--brown-theme);
+    font-size: min(6vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-top: 5px solid var(--dark-theme);
+    border-left: 5px solid var(--dark-theme);
+    border-right: 5px solid var(--dark-theme);
+}
+
+.coreTeamTitle > p {
+    font-family: Normal, serif;
+    text-align: center;
+    width: 80%;
+    color: var(--dark-theme);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding: 30px 0;
+}
+
+.coreTeamTitle > span {
+    font-family: Title, serif;
+    background: var(--white-theme);
+    color: var(--blue-theme);
+    padding-top: 60px;
+    width: min(1200px, 100vw);
+    border-top: 5px solid var(--dark-theme);
+    border-left: 5px solid var(--dark-theme);
+    border-right: 5px solid var(--dark-theme);
+}
+
+.mainCoreTeam {
+    color: var(--white-theme);
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: min(1200px, 100vw);
+    gap: 40px;
+}
+
+.department {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subTitle {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    border-radius: 10px;
+    transform: scale(auto);
+    background: var(--blue-theme);
+    transition: ease 200ms;
+}
+
+.subTitle > img {
+    flex-shrink: 0;
+    width: min(450px, 90vw);
+    height: min(300px, 60vw);
+    background: var(--white-theme);
+    border-radius: 10px;
+    transition: ease 200ms;
+}
+
+.subTitle.active {
+    width: 100%;
+    flex-direction: column;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.subTitle.active > img {
+    width: 100%;
+    height: calc(100% / 3 * 1.5);
+    object-fit: cover;
+}
+
+.subDescription {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subDescription > span:first-child {
+    text-align: center;
+    font-family: Title, sans-serif;
+    font-size: 3.5rem;
+    padding-top: 30px;
+}
+
+.subDescription > span:nth-child(2) {
+    opacity: 0.8;
+}
+
+.subDescription > span:last-child {
+    flex-grow: 1;
+}
+
+.subDescription > span:last-child::after {
+    content: "";
+    margin-top: 40px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--white-theme) transparent transparent transparent;
+}
+
+.subTitle.active > .subDescription > span:nth-child(2) {
+    padding-bottom: 30px;
+}
+
+.subTitle.active > .subDescription > span:last-child {
+    display: none;
+}
+
+.subTitle.active > .subDescription > span:last-child::after {
+    display: none;
+}
+
+.coreMember {
+    width: 100%;
+    padding: 30px 0px;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    color: var(--blue-theme);
+    background: var(--white-theme);
+    animation: disappear 200ms ease both;
+}
+
+.subTitle.active + .coreMember {
+    display: flex;
+    animation: appear 200ms ease both;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    row-gap: 10px;
+}
+
+.container > img {
+    width: 150px;
+    border: 2px solid var(--dark-theme);
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+    .subTitle {
+        flex-direction: column;
+        width: min(450px, 90vw);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subDescription {
+        width: 100%;
+        height: auto;
+    }
+
+    .subTitle.active > .subDescription {
+        padding-bottom: 0px;
+    }
+
+    .subDescription > span:first-child {
+        font-size: 2rem;
+    }
+
+    .subDescription > span:last-child::after {
+        content: "";
+        margin-top: 20px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: var(--dark-theme) transparent transparent transparent;
+    }
+}
