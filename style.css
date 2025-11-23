@@ -69,6 +69,13 @@ span {
     height: 100%;
 }
 
+.main img {
+    width: 100%;
+    height: auto;
+    display: block; 
+    object-fit: cover;
+}
+
 .joinUs:last-child {
     display: none;
 }
@@ -120,6 +127,7 @@ span {
 
 .logo > img {
     height: 100%;
+    border-radius: 50px;
 }
 
 .navElements {

@@ -17,15 +17,19 @@
 //         }
 //     })
 // }
-$(document).ready(function(){
-    $(".subTitle").click(function() {
-        $(this).next().slideToggle(200);
-        $(this).toggleClass("active");
+$(document).ready(function () {
+  $(".subTitle").click(function () {
+    $(this).next().slideToggle(200);
+    $(this).toggleClass("active");
 
-        console.log(this.className);
-        if(this.className === "subTitle active"){
-            $(this).parent().siblings().children(".subTitle").next().slideUp(200);
-            $(this).parent().siblings().children(".subTitle").attr('class', 'subTitle');
-        }
-    }); 
+    console.log(this.className);
+    if (this.className === "subTitle active") {
+      $(this).parent().siblings().children(".subTitle").next().slideUp(200);
+      $(this)
+        .parent()
+        .siblings()
+        .children(".subTitle")
+        .attr("class", "subTitle");
+    }
+  });
 });
