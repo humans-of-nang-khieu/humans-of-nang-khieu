@@ -77,8 +77,8 @@ pre {
 
 .subTitle > img {
     flex-shrink: 0;
-    width: min(450px, 90vw);
-    height: min(300px, 60vw);
+    width: min(300px, 90vw);
+    height: min(450px, 60vw);
     background: var(--white-theme);
     border-radius: 10px;
     transition: ease 200ms;
