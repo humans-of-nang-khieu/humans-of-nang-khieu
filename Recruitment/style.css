@@ -179,6 +179,14 @@ pre {
     display: none;
 }
 
+.subTitle:hover {
+    cursor: pointer;
+
+    filter: brightness(0.8); 
+    
+    transform: translateY(-5px);
+}
+
 .requirements {
     display: none;
     width: 100%;

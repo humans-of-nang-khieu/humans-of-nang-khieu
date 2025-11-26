@@ -157,6 +157,14 @@ pre {
     animation: appear 200ms ease both;
 }
 
+.subTitle:hover {
+    cursor: pointer;
+
+    filter: brightness(0.8); 
+    
+    transform: translateY(-5px);
+}
+
 .container {
     display: flex;
     flex-direction: column;
