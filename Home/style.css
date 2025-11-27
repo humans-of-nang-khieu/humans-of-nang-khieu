@@ -25,17 +25,6 @@
   padding: 30px 0;
 }
 
-.aboutUs > span {
-  font-family: Title, serif;
-  background: var(--white-theme);
-  color: var(--blue-theme);
-  padding-top: 60px;
-  width: min(1200px, 100vw);
-  border-top: 5px solid var(--dark-theme);
-  border-left: 5px solid var(--dark-theme);
-  border-right: 5px solid var(--dark-theme);
-}
-
 pre {
   font-family: Title, serif;
   font-optical-sizing: initial;
@@ -43,6 +32,18 @@ pre {
   font-style: normal;
   margin: 0;
   text-wrap: wrap;
+}
+
+.question {
+    font-family: Title, serif;
+    font-optical-sizing: initial;
+    font-stretch: expanded;
+    font-style: normal;
+    margin: 0;
+    text-wrap: wrap;
+    font-size: min(4vw, 2rem);
+    letter-spacing: -1px;
+    color: var(--brown-theme);
 }
 
 .achievementsAndImages {
@@ -54,16 +55,6 @@ pre {
   margin-bottom: 30px;
 }
 
-.aboutUs > span,
-.experience {
-  font-size: min(6vw, 3rem);
-  letter-spacing: -1px;
-}
-
-.aboutUs > span {
-  padding-bottom: 40px;
-}
-
 .achievementsAndImages > .mainElement > span > img,
 .achievementsAndImages > .mainElement > span:nth-child(1),
 .achievementsAndImages > .mainElement > img,
@@ -72,6 +63,33 @@ pre {
 .fbPost > img {
   border: 2px solid var(--dark-theme);
   border-radius: 8px;
+}
+
+.achievementsAndImages > span {     
+  font-family: Title, serif;
+  background: var(--white-theme);
+  color: var(--blue-theme);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: 0;
+  margin-right: 0;
+  width: min(1200px, 100vw);
+  font-size: min(6vw, 3rem);
+  letter-spacing: -1px;
+}
+
+.whiteCanvas {
+    background: var(--white-theme);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 5px solid var(--dark-theme);
+    border-left: 5px solid var(--dark-theme);
+    border-right: 5px solid var(--dark-theme);
+    border-bottom: 5px solid var(--dark-theme);
+    width: min(1200px, 100vw);
+    padding-bottom: 50px;
 }
 
 .achievementsAndImages > .mainElement,
@@ -109,6 +127,7 @@ pre {
 .achievementsAndImages > .mainElement > .images {
   gap: 10px;
   width: 400px;
+  border-width: 10px
 }
 
 .achievementsAndImages > .mainElement > span > img {
