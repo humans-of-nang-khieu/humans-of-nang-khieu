@@ -8,35 +8,11 @@ pre {
     width: auto;
 }
 
-.coreTeamTitle {
-    font-family: Title, serif;
-    width: 80%;
-    padding-top: 50px;
-    background: var(--white-theme);
-    color: var(--brown-theme);
-    font-size: min(6vw, 3rem);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-top: 5px solid var(--dark-theme);
-    border-left: 5px solid var(--dark-theme);
-    border-right: 5px solid var(--dark-theme);
+.page-intro > p {
+  text-align: center;
 }
 
-.coreTeamTitle > p {
-    font-family: Normal, serif;
-    text-align: center;
-    width: 80%;
-    color: var(--dark-theme);
-    font-size: 1.5rem;
-    line-height: 2rem;
-    border-radius: 10px;
-    margin-bottom: 50px;
-    padding: 30px 0;
-}
-
-.coreTeamTitle > span {
+/* .page-intro > span {
     font-family: Title, serif;
     background: var(--white-theme);
     color: var(--blue-theme);
@@ -45,7 +21,7 @@ pre {
     border-top: 5px solid var(--dark-theme);
     border-left: 5px solid var(--dark-theme);
     border-right: 5px solid var(--dark-theme);
-}
+} */
 
 .mainCoreTeam {
     color: var(--white-theme);
