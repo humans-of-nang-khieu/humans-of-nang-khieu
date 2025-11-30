@@ -1,20 +1,32 @@
 "use strict";
 
 const menu = document.getElementById("menu");
-const navElements = document.getElementById("navElements");
-const navBar = document.getElementById("navBar");
+const headerElements = document.getElementById("headerElements");
+const header = document.getElementById("header");
 
 var lastY = 0;
 
-menu.addEventListener("click", function () {
-  if (navElements.className === "navElements") {
-    navElements.className = "navElements navElementsActive";
-    menu.innerHTML = "close";
-  } else {
-    navElements.className = "navElements";
-    menu.innerHTML = "menu";
-  }
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("../header.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("header").innerHTML = data;
+
+      // (Tuỳ chọn) Highlight mục đang active
+      highlightCurrentPage();
+    });
 });
+
+function highlightCurrentPage() {
+  const currentPath = "../" + window.location.pathname.split("/")[1];
+  const headerLinks = document.querySelectorAll(".headerElements a");
+
+  headerLinks.forEach((link) => {
+    if (link.getAttribute("href") === currentPath) {
+      link.style.color = "var(--brown-theme)"; // Ví dụ: đổi màu chữ mục đang chọn
+    }
+  });
+}
 
 window.onscroll = function () {
   scrollFunction();
@@ -24,10 +36,10 @@ function scrollFunction() {
   var curPos = window.scrollY;
   if (curPos > 20) {
     lastY = curPos;
-    navBar.className = "navBar navBarActive";
+    header.className = "header headerActive";
   } else {
     lastY = curPos;
-    navBar.className = "navBar";
+    header.className = "header";
   }
 }
 

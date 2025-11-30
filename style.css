@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: NavBar;
+    font-family: header;
     src: url('assets25/font/Playfair_Display/static/PlayfairDisplay-Bold.ttf');
 }
 
@@ -80,8 +80,8 @@ span {
     display: none;
 }
 
-.navBar {
-    font-family: NavBar, serif;
+.header {
+    font-family: header, serif;
     z-index: 2;
     position: fixed;
     top: 0;
@@ -93,7 +93,7 @@ span {
     height: 80px;
 }
 
-.navBar::before {
+.header::before {
     z-index: -1;
     position: absolute;
     content: "";
@@ -103,19 +103,19 @@ span {
     transition: ease-in-out 500ms;
 }
 
-.navBar.navBarActive::before {
+.header.headerActive::before {
     height: 100%;
     border-bottom: 2px solid var(--white-theme);
 }
 
-.navBar.navBarActive > .joinUs::before {
+.header.headerActive > .joinUs::before {
     height: 100%;
     background: var(--brown-theme);
     color: var(--dark-theme);
     transition: linear 300ms;
 }
 
-.navBar.navBarActive > .joinUs {
+.header.headerActive > .joinUs {
     color: var(--white-theme);
 }
 
@@ -130,7 +130,7 @@ span {
     border-radius: 50px;
 }
 
-.navElements {
+.headerElements {
     z-index: 1;
     display: flex;
     justify-content: space-around;
@@ -142,24 +142,21 @@ span {
     background: var(--white-theme);
 }
 
-.navElements > .active {
-    font-family: Title;
+.headerElements > .active {
     color: var(--brown-theme);
 }
 
-.navElements > a {
+.headerElements > a {
     text-decoration: none;
     color: var(--blue-theme);
     transition: ease 200ms;
-}
-
-.navElements > a:hover {
-    text-decoration: underline var(--dark-theme) 2px;
-}
-
-.navElements > a {
+    
     transform: translateY(1px);
     height: 100%;
+}
+
+.headerElements > a:hover {
+    text-decoration: underline var(--dark-theme) 2px;
 }
 
 .joinUs {
