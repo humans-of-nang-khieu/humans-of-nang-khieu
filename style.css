@@ -215,15 +215,15 @@ span {
     background-repeat: no-repeat;
 }
 
-.title, .countdownTimer > span {
+.hero, .countdownTimer > span {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.title {
-    background: url("assets25/bg.png");
-    background-attachment: fixed;
+.hero {
+    background: url("assets25/hero.png");
+    background-attachment: scroll;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
