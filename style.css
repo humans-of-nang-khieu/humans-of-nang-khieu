@@ -156,7 +156,7 @@ span {
 }
 
 .headerElements > a:hover {
-    text-decoration: underline var(--dark-theme) 2px;
+    transform: translateY(-1px);
 }
 
 .joinUs {
