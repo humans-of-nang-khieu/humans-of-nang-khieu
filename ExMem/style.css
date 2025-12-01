@@ -1,30 +1,3 @@
-.aboutUs {
-  font-family: Title, serif;
-  width: 80%;
-  padding-top: 50px;
-  background: var(--white-theme);
-  color: var(--brown-theme);
-  font-size: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-top: 5px solid var(--dark-theme);
-  border-left: 5px solid var(--dark-theme);
-  border-right: 5px solid var(--dark-theme);
-}
-
-.aboutUs > p {
-  font-family: Normal, serif;
-  text-align: left;
-  width: 80%;
-  color: var(--dark-theme);
-  font-size: 1.5rem;
-  line-height: 2rem;
-  border-radius: 10px;
-  margin-bottom: 50px;
-  padding: 30px 0;
-}
-
 pre {
   font-family: Title, serif;
   font-optical-sizing: initial;
@@ -58,6 +31,8 @@ pre {
 .achievementsAndImages > .mainElement > span > img,
 .achievementsAndImages > .mainElement > span:nth-child(1),
 .achievementsAndImages > .mainElement > img,
+.achievementsAndImages > .mainElement > span > .oneImage > img,
+.achievementsAndImages > .mainElement > span > .threeImage > img,
 .experience > .mainElement,
 .communication,
 .fbPost > img {
@@ -76,20 +51,6 @@ pre {
   width: min(1200px, 100vw);
   font-size: min(6vw, 3rem);
   letter-spacing: -1px;
-}
-
-.whiteCanvas {
-    background: var(--white-theme);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top: 5px solid var(--dark-theme);
-    border-left: 5px solid var(--dark-theme);
-    border-right: 5px solid var(--dark-theme);
-    border-bottom: 5px solid var(--dark-theme);
-    width: min(1200px, 100vw);
-    padding-bottom: 50px;
 }
 
 .achievementsAndImages > .mainElement,
@@ -124,13 +85,25 @@ pre {
   height: 100%;
 }
 
-.achievementsAndImages > .mainElement > .images {
+.achievementsAndImages > .mainElement > span{
   gap: 10px;
   width: 400px;
 }
 
 .achievementsAndImages > .mainElement > span > img {
   width: 175px;
+}
+
+.achievementsAndImages > .mainElement > span > .oneImage > img {
+  width: 400px;
+}
+
+.achievementsAndImages > .mainElement > span > .threeImage {
+  gap: 5px;
+}
+
+.achievementsAndImages > .mainElement > span > .threeImage > img {
+  width: 125px;
 }
 
 .achievementsAndImages > .mainElement:nth-child(2n) > span:nth-child(1) {
