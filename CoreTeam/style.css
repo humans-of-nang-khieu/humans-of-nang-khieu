@@ -27,6 +27,7 @@ pre {
 .department {
     display: flex;
     flex-direction: column;
+    width: 100%;
     align-items: center;
 }
 
@@ -111,7 +112,8 @@ pre {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 70px;
+    gap: 15%;
+    row-gap: 20px;
     color: var(--blue-theme);
     background: var(--white-theme);
     animation: disappear 200ms ease both;
@@ -124,7 +126,7 @@ pre {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 60px;
+    gap: 5%;
     color: var(--blue-theme);
     background: var(--white-theme);
     animation: disappear 200ms ease both;
@@ -155,14 +157,16 @@ pre {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 250px;
-    row-gap: 10px;
+    gap: 10px;
+    width: 20%;
+    height: 20%;
 }
 
 .container > img {
-    width: 150px;
     border: 2px solid var(--dark-theme);
     border-radius: 50%;
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (max-width: 1000px) {
