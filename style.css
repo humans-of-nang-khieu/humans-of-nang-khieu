@@ -341,6 +341,13 @@ h2 {
     text-wrap: wrap;
 }
 
+h3 {
+    font-family: Title, sans-serif;
+    color: var(--dark-theme);
+    font-size: 2.25rem;
+    margin: 0;
+}
+
 .followUs {
     font-family: Title, sans-serif;
     display: flex;
