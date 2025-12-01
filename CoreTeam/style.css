@@ -12,17 +12,6 @@ pre {
   text-align: center;
 }
 
-/* .page-intro > span {
-    font-family: Title, serif;
-    background: var(--white-theme);
-    color: var(--blue-theme);
-    padding-top: 60px;
-    width: min(1200px, 100vw);
-    border-top: 5px solid var(--dark-theme);
-    border-left: 5px solid var(--dark-theme);
-    border-right: 5px solid var(--dark-theme);
-} */
-
 .mainCoreTeam {
     color: var(--white-theme);
     padding: 40px 0px;
@@ -31,7 +20,7 @@ pre {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    width: min(1200px, 100vw);
+    width: 100%;
     gap: 40px;
 }
 
