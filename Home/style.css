@@ -1,3 +1,12 @@
+pre {
+  font-family: Title, serif;
+  font-optical-sizing: initial;
+  font-stretch: expanded;
+  font-style: normal;
+  margin: 0;
+  text-wrap: wrap;
+}
+
 .question {
     font-family: Title, serif;
     font-optical-sizing: initial;
@@ -22,6 +31,8 @@
 .achievementsAndImages > .mainElement > span > img,
 .achievementsAndImages > .mainElement > span:nth-child(1),
 .achievementsAndImages > .mainElement > img,
+.achievementsAndImages > .mainElement > span > .oneImage > img,
+.achievementsAndImages > .mainElement > span > .threeImage > img,
 .experience > .mainElement,
 .communication,
 .fbPost > img {
@@ -37,6 +48,7 @@
   padding-bottom: 40px;
   margin-left: 0;
   margin-right: 0;
+  width: min(1200px, 100vw);
   font-size: min(6vw, 3rem);
   letter-spacing: -1px;
 }
@@ -47,6 +59,7 @@
   display: flex;
   align-items: center;
   gap: 15px;
+  width: min(900px, 90%);
   height: fit-content;
   margin-bottom: 30px;
   /* font-weight: 500; */
@@ -72,14 +85,25 @@
   height: 100%;
 }
 
-.achievementsAndImages > .mainElement > .images {
+.achievementsAndImages > .mainElement > span{
   gap: 10px;
   width: 400px;
-  border-width: 10px
 }
 
 .achievementsAndImages > .mainElement > span > img {
   width: 175px;
+}
+
+.achievementsAndImages > .mainElement > span > .oneImage > img {
+  width: 400px;
+}
+
+.achievementsAndImages > .mainElement > span > .threeImage {
+  gap: 5px;
+}
+
+.achievementsAndImages > .mainElement > span > .threeImage > img {
+  width: 125px;
 }
 
 .achievementsAndImages > .mainElement:nth-child(2n) > span:nth-child(1) {
