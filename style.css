@@ -17,6 +17,9 @@
     --blue-theme: #05113b;
     --dark-theme: #030624;
     --brown-theme: #741511;
+    --tpt-theme: var(--brown-theme);
+    --nkx-theme: #0040b8;
+    --just-theme: rgb(189, 28, 28);
 }
 
 a {
@@ -325,7 +328,6 @@ h1 {
 
 h2 {
     font-family: Title, serif;
-    background: var(--white-theme);
     color: var(--blue-theme);
     padding-top: 40px;
     padding-bottom: 40px;
@@ -342,7 +344,36 @@ h2 {
 }
 
 h3 {
-    font-family: Title, sans-serif;
+    font-family: Title, serif;
+    color: var(--brown-theme);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: -1px;
+    font-optical-sizing: initial;
+    font-stretch: expanded;
+    font-style: normal;
+    margin: 0;
+    text-wrap: wrap;
+}
+
+h3.tpt {
+    color: var(--tpt-theme);
+}
+
+h3.nkx {
+    color: var(--nkx-theme);
+}
+
+h3.just {
+    color: var(--just-theme);
+}
+
+h4 {
+    font-family: Title, serif;
     color: var(--dark-theme);
     font-size: 2.25rem;
     margin: 0;
