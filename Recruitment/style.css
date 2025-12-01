@@ -255,7 +255,7 @@ pre {
 }
 
 .applyNow {
-    font-family: navBar, sans-serif;
+    font-family: header, sans-serif;
     letter-spacing: 1px;
     text-decoration: none;
     color: var(--white-theme);
