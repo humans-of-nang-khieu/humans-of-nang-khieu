@@ -426,7 +426,11 @@ h4 {
 }
 
 @media screen and (max-width: 600px) {
-    .navBar {
+    .hero {
+        width: 100%;;
+    }
+    
+    .headerBar {
         height: 10vh;
     }
     
@@ -440,7 +444,7 @@ h4 {
         margin-top: 1.25vh;
     }
     
-    .navElements {
+    .headerElements {
         z-index: 2;
         transition: ease 400ms;
         transform: translateX(300px);
@@ -456,7 +460,7 @@ h4 {
         border-radius: 0px 0px 0px 5px;
     }
     
-    .navElements.navElementsActive {
+    .headerElements.headerElementsActive {
         transform: translateX(0px);
     }
     
