@@ -30,7 +30,7 @@ body{
     height: auto;
 }
 
-.main > span {
+.main, .title > span {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,7 +220,7 @@ span {
     height: 100%;
 }
 
-.hero > span {
+.hero, .countdownTimer > span {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -449,7 +449,19 @@ h4 {
     .main {
         margin-top: 0px;
     }
+
+    .countdownTimer {
+        font-size: 1.5rem;
+    }
     
+    .countdownTimer > span > span:nth-child(1) {
+        font-size: 2.5rem;
+    }
+
+    .countdownTimer > span > span:nth-child(2){
+        font-size: 1.1rem;
+    }
+
     .followUs > span:nth-child(2) > a > p {
         display: none;
     }
