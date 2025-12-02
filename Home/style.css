@@ -67,23 +67,18 @@ pre {
 }
 
 .mainElement > img {
+  width: 40vw;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  flex: 1;
-}
-
-.mainElement > img {
-  width: 40vw;
-  height: auto;
-  flex: 1;
 }
 
 .mainElement > span:nth-child(1) {
   width: 40vw;
-  padding: 0.15vw 0.3vw;
+  padding: 15px 30px;
   text-align: center;
   height: auto;
   flex: 1;
@@ -100,13 +95,6 @@ pre {
   align-items: center;
   width: 40vw;
   height: auto;
-  min-width: 1vw;
-}
-
-.mainElement > span > img {
-  width: 18vw;
-  height: auto;
-  flex: 1;
   min-width: 1vw;
 }
 
