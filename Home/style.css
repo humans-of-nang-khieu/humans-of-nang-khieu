@@ -56,6 +56,7 @@ pre {
   color: var(--dark-theme);
   justify-content: space-between;
   display: flex;
+  padding-top: 40px;
   align-items: center;
   gap: 3vw;
   width: 80vw;
@@ -65,7 +66,7 @@ pre {
   font-size: 1.25rem;
 }
 
-.achievementsAndImages > .mainElement > img {
+.mainElement > img {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,13 +75,13 @@ pre {
   flex: 1;
 }
 
-.achievementsAndImages > .mainElement > img {
+.mainElement > img {
   width: 40vw;
   height: auto;
   flex: 1;
 }
 
-.achievementsAndImages > .mainElement > span:nth-child(1) {
+.mainElement > span:nth-child(1) {
   width: 40vw;
   padding: 0.15vw 0.3vw;
   text-align: center;
@@ -89,7 +90,7 @@ pre {
   min-width: 300px;
 }
 
-.achievementsAndImages > .mainElement > span{
+.mainElement > span{
   gap: 0.5vw;
   display: flex;
   flex-wrap: nowrap;
@@ -102,40 +103,40 @@ pre {
   min-width: 1vw;
 }
 
-.achievementsAndImages > .mainElement > span > img {
+.mainElement > span > img {
   width: 18vw;
   height: auto;
   flex: 1;
   min-width: 1vw;
 }
 
-.achievementsAndImages > .mainElement > span > .twoImage {
+.twoImage {
   gap: 0.5vw;
   flex: 1;
   min-width: 1vw;
 }
 
-.achievementsAndImages > .mainElement > span > .twoImage > img {
+.twoImage > img {
   width: 18vw;
   height: auto;
   flex: 1;
   min-width: 1vw;
 }
 
-.achievementsAndImages > .mainElement > span > .oneImage > img {
+.oneImage > img {
   width: 40vw;
   height: auto;
   flex: 1;
   min-width: 1vw;
 }
 
-.achievementsAndImages > .mainElement > span > .threeImage {
+.threeImage {
   gap: 0.5vw;
   flex: 1;
   min-width: 1vw;
 }
 
-.achievementsAndImages > .mainElement > span > .threeImage > img {
+.threeImage > img {
   width: 12vw;
   height: auto; 
   flex: 1;
@@ -146,7 +147,7 @@ pre {
   order: 1;
 }
 
-.achievementsAndImages > .mainElement > span > p:first-child {
+.mainElement > span > p:first-child {
   font-family: Title, sans-serif;
   font-size: 2.5rem;
 }
@@ -158,21 +159,21 @@ pre {
 }
 
 @media screen and (max-width: 800px) {
-  .achievementsAndImages > .mainElement {
+  .mainElement {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .achievementsAndImages > .mainElement > .images,
-  .achievementsAndImages > .mainElement > img,
-  .achievementsAndImages > .mainElement > span > .twoImage > img,
-  .achievementsAndImages > .mainElement > span > .threeImage > img,
-  .achievementsAndImages > .mainElement > span > .oneImage > img {
+  .mainElement > .images,
+  .mainElement > img,
+  .mainElement > span > .twoImage > img,
+  .mainElement > span > .threeImage > img,
+  .mainElement > span > .oneImage > img {
     width: min(80vw, 600px);
   }
 
-  .achievementsAndImages > .mainElement > span:nth-child(1) {
+  .mainElement > span:nth-child(1) {
     order: 1;
     width: 90%;
   }
