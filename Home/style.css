@@ -29,12 +29,12 @@ pre {
   flex-wrap: nowrap;
 }
 
-.achievementsAndImages > .mainElement > span > img,
-.achievementsAndImages > .mainElement > span:nth-child(1),
-.achievementsAndImages > .mainElement > img,
-.achievementsAndImages > .mainElement > .images > .oneImage > img,
-.achievementsAndImages > .mainElement > .images > .twoImage > img,
-.achievementsAndImages > .mainElement > .images > .threeImage > img {
+.mainElement > span > img,
+.mainElement > span:nth-child(1),
+.mainElement > img,
+.oneImage > img,
+.twoImage > img,
+.threeImage > img {
   border: 2px solid var(--dark-theme);
   border-radius: 8px;
 }
@@ -58,7 +58,7 @@ pre {
   display: flex;
   padding-top: 40px;
   align-items: center;
-  gap: 3vw;
+  gap: 1vw;
   width: 80vw;
   flex-wrap: nowrap;
   height: auto;
@@ -95,40 +95,53 @@ pre {
   align-items: center;
   width: 40vw;
   height: auto;
-  min-width: 1vw;
+  min-width: 0;
+}
+
+.images {
+  gap: 1vw;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  height: auto;
+  min-width: 0;
+  flex: 1;
+}
+
+.oneImage > img {
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  flex: 1;
 }
 
 .twoImage {
   gap: 0.5vw;
   flex: 1;
-  min-width: 1vw;
+  min-width: 0;
 }
 
 .twoImage > img {
-  width: 18vw;
+  width: 100%;
   height: auto;
+  min-width: 0;
   flex: 1;
-  min-width: 1vw;
-}
-
-.oneImage > img {
-  width: 40vw;
-  height: auto;
-  flex: 1;
-  min-width: 1vw;
 }
 
 .threeImage {
   gap: 0.5vw;
   flex: 1;
-  min-width: 1vw;
+  min-width: 0;
 }
 
 .threeImage > img {
-  width: 12vw;
+  width: 100%;
+  min-width: 0;
   height: auto; 
   flex: 1;
-  min-width: 1vw;
 }
 
 .achievementsAndImages > .mainElement:nth-child(2n) > span:nth-child(1) {
