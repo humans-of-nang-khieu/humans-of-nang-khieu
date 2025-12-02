@@ -35,9 +35,7 @@ pre {
 .achievementsAndImages > .mainElement > .images > .oneImage > img,
 .achievementsAndImages > .mainElement > .images > .twoImage > img,
 .achievementsAndImages > .mainElement > .images > .threeImage > img,
-.experience > .mainElement,
-.communication,
-.fbPost > img {
+.experience > .mainElement {
   border: 2px solid var(--dark-theme);
   border-radius: 8px;
 }
@@ -55,8 +53,7 @@ pre {
   letter-spacing: -1px;
 }
 
-.mainElement,
-.communication {
+.mainElement {
   color: var(--dark-theme);
   justify-content: space-between;
   display: flex;
@@ -151,76 +148,9 @@ pre {
   order: 1;
 }
 
-.achievementsAndImages > .mainElement > span > p:first-child,
-.communication > p {
+.achievementsAndImages > .mainElement > span > p:first-child {
   font-family: Title, sans-serif;
   font-size: 2.5rem;
-}
-
-.communication {
-  height: fit-content;
-  width: min(900px, 95%);
-  gap: 0px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-}
-
-.communication > p:first-child {
-  margin-bottom: 0;
-}
-
-.communication > p:nth-child(2) {
-  font-family: Normal, serif;
-  opacity: 80%;
-  font-size: 1.5rem;
-  padding: 0;
-  margin: 0;
-}
-
-.communication > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.communication > div > p {
-  font-family: Title, serif;
-  font-size: 2rem;
-}
-
-.communication > div > span {
-  width: 90%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 15px;
-}
-
-.communication > div > span:first-child > .fbPost {
-  overflow: hidden;
-}
-
-.fbPost > a {
-  width: fit-content;
-  height: fit-content;
-  display: block;
-  margin: 10px 0;
-}
-
-.fbPost > img {
-  height: 150px;
-}
-
-.communication > div > span:nth-child(8) > a > img {
-  height: 300px;
 }
 
 .achievementsAndImages > span {
@@ -251,7 +181,6 @@ pre {
   font-size: 1rem;
   width: 85%;
   padding: 15px;
-  /* font-weight: 500; */
 }
 
 .experience > .mainElement > span {
@@ -286,15 +215,7 @@ pre {
   font-size: 1.1rem;
 }
 
-/* .followUs > span {
-  font-size: 1.5rem;
-} */
-
 @media screen and (max-width: 800px) {
-  .aboutUs > p {
-    padding: 30px 5%;
-  }
-
   .achievementsAndImages > .mainElement {
     display: flex;
     flex-direction: column;
@@ -320,53 +241,3 @@ pre {
     margin-left: 0;
   }
 }
-
-/* @media screen and (max-width: 650px) {
-  .achievementsAndImages > span {
-    font-size: 2rem;
-  }
-} */
-
-/* @media screen and (max-width: 600px) {
-  .experience > .mainElement {
-    flex-direction: column;
-  }
-
-  .achievementsAndImages > .mainElement > .images > img {
-    height: 125px;
-    width: 125px;
-    object-fit: cover;
-  }
-} */
-
-/* @media screen and (max-width: 510px) {
-  .fbPost {
-    width: 100%;
-  }
-
-  .communication > div > span:nth-child(8) > a > img {
-    width: 70%;
-    height: auto;
-  }
-
-  .fbPost > img {
-    width: 70%;
-    height: auto;
-  }
-
-  .aboutUs {
-    font-size: 2.5rem;
-  }
-
-  .aboutUs > p {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .experience > .mainElement > span > img {
-    width: 100%;
-    height: auto;
-  }
-} */
