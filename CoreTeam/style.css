@@ -44,7 +44,7 @@ pre {
 .subTitle > img {
     flex-shrink: 0;
     width: min(300px, 90vw);
-    height: min(450px, 60vw);
+    height: min(500px, 60vw);
     background: var(--white-theme);
     border-radius: 10px;
     transition: ease 200ms;
@@ -58,7 +58,7 @@ pre {
 
 .subTitle.active > img {
     width: 100%;
-    height: calc(100% / 3 * 1.5);
+    height: auto;
     object-fit: cover;
 }
 
