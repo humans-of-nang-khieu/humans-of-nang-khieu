@@ -159,17 +159,17 @@ pre {
     justify-content: center;
     gap: 10px;
     width: 20%;
-    height: 20%;
+    height: auto;
 }
 
 .container > img {
     border: 2px solid var(--dark-theme);
     border-radius: 50%;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
     .subTitle {
         flex-direction: column;
         width: min(450px, 90vw);
