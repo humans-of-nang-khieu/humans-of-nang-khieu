@@ -20,19 +20,21 @@ pre {
 }
 
 .achievementsAndImages {
-  width: 100%;
+  width: 85vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+  flex-wrap: nowrap;
 }
 
 .achievementsAndImages > .mainElement > span > img,
 .achievementsAndImages > .mainElement > span:nth-child(1),
 .achievementsAndImages > .mainElement > img,
-.achievementsAndImages > .mainElement > span > .oneImage > img,
-.achievementsAndImages > .mainElement > span > .threeImage > img,
+.achievementsAndImages > .mainElement > .images > .oneImage > img,
+.achievementsAndImages > .mainElement > .images > .twoImage > img,
+.achievementsAndImages > .mainElement > .images > .threeImage > img,
 .experience > .mainElement,
 .communication,
 .fbPost > img {
@@ -48,21 +50,22 @@ pre {
   padding-bottom: 40px;
   margin-left: 0;
   margin-right: 0;
-  width: min(1200px, 100vw);
+  width: min(1200px, 85vw);
   font-size: min(6vw, 3rem);
   letter-spacing: -1px;
 }
 
-.achievementsAndImages > .mainElement,
+.mainElement,
 .communication {
   color: var(--dark-theme);
+  justify-content: space-between;
   display: flex;
   align-items: center;
-  gap: 15px;
-  width: min(900px, 90%);
-  height: fit-content;
-  margin-bottom: 30px;
-  /* font-weight: 500; */
+  gap: 3vw;
+  width: 80vw;
+  flex-wrap: nowrap;
+  height: auto;
+  margin-bottom: 60px;
   font-size: 1.25rem;
 }
 
@@ -72,38 +75,76 @@ pre {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  flex-wrap: nowrap;
+  flex: 1;
 }
 
 .achievementsAndImages > .mainElement > img {
-  width: 400px;
+  width: 40vw;
+  height: auto;
+  flex: 1;
 }
 
 .achievementsAndImages > .mainElement > span:nth-child(1) {
-  width: 400px;
-  padding: 15px 30px;
+  width: 40vw;
+  padding: 0.15vw 0.3vw;
   text-align: center;
-  height: 100%;
+  height: auto;
+  flex: 1;
+  min-width: 300px;
 }
 
 .achievementsAndImages > .mainElement > span{
-  gap: 10px;
-  width: 400px;
+  gap: 0.5vw;
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  height: auto;
+  min-width: 1vw;
 }
 
 .achievementsAndImages > .mainElement > span > img {
-  width: 175px;
+  width: 18vw;
+  height: auto;
+  flex: 1;
+  min-width: 1vw;
+}
+
+.achievementsAndImages > .mainElement > span > .twoImage {
+  gap: 0.5vw;
+  flex: 1;
+  min-width: 1vw;
+}
+
+.achievementsAndImages > .mainElement > span > .twoImage > img {
+  width: 18vw;
+  height: auto;
+  flex: 1;
+  min-width: 1vw;
 }
 
 .achievementsAndImages > .mainElement > span > .oneImage > img {
-  width: 400px;
+  width: 40vw;
+  height: auto;
+  flex: 1;
+  min-width: 1vw;
 }
 
 .achievementsAndImages > .mainElement > span > .threeImage {
-  gap: 5px;
+  gap: 0.5vw;
+  flex: 1;
+  min-width: 1vw;
 }
 
 .achievementsAndImages > .mainElement > span > .threeImage > img {
-  width: 125px;
+  width: 12vw;
+  height: auto; 
+  flex: 1;
+  min-width: 1vw;
 }
 
 .achievementsAndImages > .mainElement:nth-child(2n) > span:nth-child(1) {
@@ -249,7 +290,7 @@ pre {
   font-size: 1.5rem;
 } */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   .aboutUs > p {
     padding: 30px 5%;
   }
@@ -280,13 +321,13 @@ pre {
   }
 }
 
-@media screen and (max-width: 650px) {
+/* @media screen and (max-width: 650px) {
   .achievementsAndImages > span {
     font-size: 2rem;
   }
-}
+} */
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .experience > .mainElement {
     flex-direction: column;
   }
@@ -296,9 +337,9 @@ pre {
     width: 125px;
     object-fit: cover;
   }
-}
+} */
 
-@media screen and (max-width: 510px) {
+/* @media screen and (max-width: 510px) {
   .fbPost {
     width: 100%;
   }
@@ -328,4 +369,4 @@ pre {
     width: 100%;
     height: auto;
   }
-}
+} */
