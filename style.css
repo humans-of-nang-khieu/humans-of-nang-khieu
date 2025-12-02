@@ -426,6 +426,14 @@ h4 {
         width: 100%;
         min-height: 300px;
     }
+
+    .page-body {
+        width: 100%;
+    }
+
+    .page-intro {
+        width: 95%;
+    }
     
     .headerBar {
         height: 10vh;
