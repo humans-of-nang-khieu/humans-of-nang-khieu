@@ -155,7 +155,7 @@ span {
     background: var(--white-theme);
 }
 
-.headerElements > .active {
+.headerElements > .headerElementsActive {
     color: var(--brown-theme);
 }
 
