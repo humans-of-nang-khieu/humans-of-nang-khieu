@@ -65,6 +65,41 @@ function scrollFunction() {
   }
 }
 
+/* Đặt trong thẻ <script> hoặc file .js */
+
+function createSnowflake() {
+  const snowflake = document.createElement("div");
+  snowflake.classList.add("snowflake");
+
+  // Random ký tự tuyết hoặc dấu chấm tròn
+  const chars = ["❄", "❅", "❆", "•"];
+  snowflake.innerText = chars[Math.floor(Math.random() * chars.length)];
+
+  // Random vị trí
+  snowflake.style.left = Math.random() * 100 + "vw";
+
+  // Random kích thước
+  const size = Math.random() * 15 + 10; // 10px - 25px
+  snowflake.style.fontSize = size + "px";
+
+  // Random độ mờ
+  snowflake.style.opacity = Math.random();
+
+  // Random tốc độ rơi (3s - 8s)
+  const duration = Math.random() * 5 + 3;
+  snowflake.style.animationDuration = duration + "s";
+
+  document.body.appendChild(snowflake);
+
+  // Xóa sau khi rơi xong
+  setTimeout(() => {
+    snowflake.remove();
+  }, duration * 1000);
+}
+
+// Tạo tuyết mỗi 100ms
+setInterval(createSnowflake, 100);
+
 // Countdown Timer
 
 const date = "30 Sep, 2025 23:59:59";

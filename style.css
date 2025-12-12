@@ -473,6 +473,35 @@ h4 {
 
 }
 
+/* Đặt trong thẻ <style> hoặc file .css */
+body {
+    background-color: #1a202c; /* Màu nền tối để thấy tuyết rõ hơn */
+    margin: 0;
+    overflow-x: hidden; /* Ẩn thanh cuộn ngang */
+}
+
+.snowflake {
+    position: fixed;
+    top: -10px;
+    z-index: 9999; /* Đảm bảo tuyết luôn nằm trên cùng */
+    color: #5d7299; /* Màu tuyết */
+    font-size: 1em;
+    user-select: none; /* Không cho phép bôi đen */
+    pointer-events: none; /* Chuột có thể bấm xuyên qua tuyết */
+    border-radius: 50%; /* Làm tròn nếu dùng background màu */
+    
+    /* Hiệu ứng rơi */
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh); /* Rơi xuống quá chiều cao màn hình một chút */
+    }
+}
+
 @keyframes appear {
     0% {
         display: none;
