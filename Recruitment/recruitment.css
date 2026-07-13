@@ -1,10 +1,15 @@
 /* General Layout Overrides for Recruitment Page */
 
-.page-intro > h1 {
+.page-intro>h1 {
     text-align: center;
 }
 
-.page-intro > span {
+.page-intro>p {
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.page-intro>span {
     display: block;
     text-align: center;
     color: var(--dark-theme);
@@ -16,7 +21,7 @@
 .intro-list {
     list-style-type: none;
     padding: 0;
-    margin: 0 0 50px 0;
+    margin: 10px 0 30px 0;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -27,8 +32,8 @@
     position: relative;
     padding-left: 24px;
     font-family: Normal, serif;
-    font-size: 1.1rem;
-    line-height: 1.6rem;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
     color: var(--dark-theme);
     text-align: left;
 }
@@ -102,7 +107,8 @@
     box-sizing: border-box;
 }
 
-.department, .department-parent {
+.department,
+.department-parent {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,7 +122,8 @@
     box-sizing: border-box;
 }
 
-.department:hover, .department-parent:hover {
+.department:hover,
+.department-parent:hover {
     box-shadow: 0 8px 30px rgba(3, 6, 36, 0.1);
 }
 
@@ -174,8 +181,8 @@
 }
 
 /* Department titles text sizes for visual hierarchy */
-.department-parent > .subTitle .subDescription > span:first-child,
-.mainRequirements > .department > .subTitle .subDescription > span:first-child {
+.department-parent>.subTitle .subDescription>span:first-child,
+.mainRequirements>.department>.subTitle .subDescription>span:first-child {
     text-align: center;
     font-family: Title, sans-serif;
     font-size: 2.25rem;
@@ -183,7 +190,7 @@
     padding: 0;
 }
 
-.children .department > .subTitle .subDescription > span:first-child {
+.children .department>.subTitle .subDescription>span:first-child {
     text-align: center;
     font-family: Title, sans-serif;
     font-size: 1.6rem;
@@ -191,7 +198,7 @@
     padding: 0;
 }
 
-.subDescription > span:nth-child(2) {
+.subDescription>span:nth-child(2) {
     font-size: 1rem;
     color: var(--white-theme);
     opacity: 0.85;
@@ -200,7 +207,7 @@
 }
 
 /* Custom rotate indicator arrow instead of display:none */
-.subDescription > span:last-child {
+.subDescription>span:last-child {
     margin-top: 12px;
     display: flex;
     align-items: center;
@@ -208,7 +215,7 @@
     transition: transform 300ms ease;
 }
 
-.subDescription > span:last-child::after {
+.subDescription>span:last-child::after {
     content: "";
     width: 0;
     height: 0;
@@ -218,11 +225,11 @@
     display: block;
 }
 
-.subTitle.active .subDescription > span:last-child {
+.subTitle.active .subDescription>span:last-child {
     transform: rotate(180deg);
 }
 
-.subTitle.active > .subDescription > span:nth-child(2) {
+.subTitle.active>.subDescription>span:nth-child(2) {
     padding-bottom: 0;
 }
 
@@ -245,14 +252,14 @@
     border-top: 1px solid transparent;
 }
 
-.subTitle.active + .requirements {
+.subTitle.active+.requirements {
     max-height: 1200px;
     opacity: 1;
     padding: 35px 25px;
     border-top: 1px solid rgba(5, 17, 59, 0.08);
 }
 
-.subTitle.active + .children {
+.subTitle.active+.children {
     max-height: 2000px;
     opacity: 1;
     padding: 30px;
@@ -271,7 +278,7 @@
     box-sizing: border-box;
 }
 
-.container > span {
+.container>span {
     font-family: Title, sans-serif;
     font-size: 1.35rem;
     color: var(--brown-theme);
@@ -331,11 +338,11 @@
     box-sizing: border-box;
 }
 
-.generalBenefits > h2 {
+.generalBenefits>h2 {
     margin-bottom: 30px;
 }
 
-.generalBenefits > span {
+.generalBenefits>span {
     width: 90%;
     max-width: 950px;
     display: flex;
@@ -384,7 +391,7 @@
     font-weight: bold;
 }
 
-.generalBenefits > span:last-child {
+.generalBenefits>span:last-child {
     padding-top: 25px;
     justify-content: center;
 }
@@ -418,7 +425,7 @@
         width: 100%;
         max-width: 480px;
     }
-    
+
     .children {
         padding: 20px;
         gap: 20px;
@@ -426,7 +433,7 @@
 }
 
 @media screen and (max-width: 800px) {
-    .generalBenefits > span {
+    .generalBenefits>span {
         flex-direction: column;
         gap: 15px;
     }
@@ -437,24 +444,28 @@
 }
 
 @media screen and (max-width: 600px) {
-    .page-intro > span {
+    .page-intro>span {
         font-size: 1.4rem;
     }
-    
-    .department-parent > .subTitle .subDescription > span:first-child,
-    .mainRequirements > .department > .subTitle .subDescription > span:first-child {
+
+    .department-parent>.subTitle .subDescription>span:first-child,
+    .mainRequirements>.department>.subTitle .subDescription>span:first-child {
         font-size: 1.6rem !important;
     }
-    
-    .children .department > .subTitle .subDescription > span:first-child {
+
+    .children .department>.subTitle .subDescription>span:first-child {
         font-size: 1.3rem !important;
     }
-    
-    .info-list, .benefits-list, .requirements-list {
+
+    .info-list,
+    .benefits-list,
+    .requirements-list {
         padding: 15px 18px;
     }
-    
-    .info-list li, .benefits-list li, .requirements-list li {
+
+    .info-list li,
+    .benefits-list li,
+    .requirements-list li {
         font-size: 1rem;
         line-height: 1.55rem;
     }
