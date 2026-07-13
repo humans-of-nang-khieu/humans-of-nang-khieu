@@ -1,0 +1,206 @@
+pre {
+    font-family: Title, serif;
+    font-optical-sizing: initial;
+    font-stretch: expanded;
+    font-style: normal;
+    margin: 0;
+    text-wrap: wrap;
+    width: auto;
+}
+
+.page-intro > p {
+  text-align: center;
+}
+
+.mainCoreTeam {
+    color: var(--white-theme);
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    gap: 40px;
+}
+
+.department {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    border-bottom: 2px dashed rgba(5, 17, 59, 0.15);
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.department:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.department-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.department-header > h3 {
+    font-family: Title, serif;
+    color: var(--brown-theme);
+    font-size: 2.25rem;
+    margin: 0;
+    text-align: center;
+}
+
+.department-header > .hashtag {
+    font-family: Normal, serif;
+    font-size: 1.1rem;
+    color: var(--blue-theme);
+    opacity: 0.8;
+    font-weight: 600;
+}
+
+.coreMember3PerRow {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    color: var(--blue-theme);
+    background: var(--white-theme);
+}
+
+.coreMember4PerRow {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    color: var(--blue-theme);
+    background: var(--white-theme);
+}
+
+.container.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(3, 6, 36, 0.05);
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+    width: 30%;
+    max-width: 320px;
+    gap: 15px;
+    height: auto;
+}
+
+.coreMember4PerRow .container.profile-card {
+    width: 22%;
+    max-width: 280px;
+}
+
+.container.profile-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 25px rgba(3, 6, 36, 0.1);
+    border-color: var(--brown-theme);
+}
+
+.avatar-wrapper {
+    flex-shrink: 0;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    border-radius: 10px;
+    border: 2px solid var(--blue-theme);
+    overflow: hidden;
+    transition: border-color 300ms ease;
+}
+
+.container.profile-card:hover .avatar-wrapper {
+    border-color: var(--brown-theme);
+}
+
+.avatar-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 300ms ease;
+}
+
+.container.profile-card:hover .avatar-wrapper img {
+    transform: scale(1.08);
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+    width: 100%;
+}
+
+.member-name {
+    font-family: Title, serif;
+    color: var(--blue-theme);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.4rem;
+}
+
+.member-role {
+    font-family: Normal, serif;
+    color: var(--brown-theme);
+    font-size: 0.95rem;
+    font-style: italic;
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.2rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .container.profile-card {
+        width: 30%;
+    }
+    .coreMember4PerRow .container.profile-card {
+        width: 30%;
+        max-width: 320px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container.profile-card,
+    .coreMember4PerRow .container.profile-card {
+        width: 45%;
+        max-width: 340px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container.profile-card,
+    .coreMember4PerRow .container.profile-card {
+        width: 100%;
+        max-width: 340px;
+    }
+    
+    .coreMember3PerRow, .coreMember4PerRow {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+}

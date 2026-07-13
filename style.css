@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: Title;
     src: url('assets25/font/Playfair_Display/static/PlayfairDisplay-Black.ttf');
@@ -26,11 +32,12 @@ a {
     text-decoration: none;
 }
 
-body{
+body {
     height: auto;
 }
 
-.main, .title > span {
+.main,
+.title>span {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,7 +92,7 @@ span {
 .main img {
     width: 100%;
     height: auto;
-    display: block; 
+    display: block;
     object-fit: cover;
 }
 
@@ -102,7 +109,8 @@ span {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 100%;;
+    width: 100%;
+    ;
     height: 80px;
 }
 
@@ -121,14 +129,14 @@ span {
     border-bottom: 2px solid var(--white-theme);
 }
 
-.header.headerActive > .joinUs::before {
+.header.headerActive>.joinUs::before {
     height: 100%;
     background: var(--brown-theme);
     color: var(--dark-theme);
     transition: linear 300ms;
 }
 
-.header.headerActive > .joinUs {
+.header.headerActive>.joinUs {
     color: var(--white-theme);
 }
 
@@ -138,7 +146,7 @@ span {
     margin-left: 2%;
 }
 
-.logo > img {
+.logo>img {
     height: 100%;
     border-radius: 50px;
 }
@@ -155,20 +163,21 @@ span {
     background: var(--white-theme);
 }
 
-.headerElements > .headerElementsActive {
+.headerElements>.headerElementsActive,
+.headerElements>a.active {
     color: var(--brown-theme);
 }
 
-.headerElements > a {
+.headerElements>a {
     text-decoration: none;
     color: var(--blue-theme);
     transition: ease 200ms;
-    
+
     transform: translateY(1px);
     height: 100%;
 }
 
-.headerElements > a:hover {
+.headerElements>a:hover {
     transform: translateY(-1px);
 }
 
@@ -220,7 +229,8 @@ span {
     height: 100%;
 }
 
-.hero, .countdownTimer > span {
+.hero,
+.countdownTimer>span {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -262,7 +272,7 @@ h1 {
     text-align: center;
 }
 
-.page-intro > p {
+.page-intro>p {
     font-family: Normal, serif;
     text-align: left;
     width: 80%;
@@ -361,13 +371,13 @@ h4 {
     row-gap: 30px;
 }
 
-.footer > span:nth-child(2) {
+.footer>span:nth-child(2) {
     display: flex;
     flex-direction: row;
     column-gap: 40px;
 }
 
-.footer > span:nth-child(2) > a {
+.footer>span:nth-child(2)>a {
     color: var(--white-theme);
     display: flex;
     align-items: center;
@@ -375,16 +385,25 @@ h4 {
     transition: 300ms ease;
 }
 
-.footer > span:nth-child(2) > a > p {
+.footer>span:nth-child(2)>a>p {
     margin: 0;
     font-size: 1.4rem;
 }
 
-.footer > span:nth-child(2) > a:hover {
+.footer>span:nth-child(2)>a:hover {
     color: var(--brown-theme);
 }
 
 @media screen and (max-width: 800px) {
+    h1 {
+        font-size: 2.75rem !important;
+    }
+
+    h2,
+    h3 {
+        font-size: 2rem !important;
+    }
+
     .hero {
         width: 100%;
         min-height: 300px;
@@ -397,47 +416,56 @@ h4 {
     .page-intro {
         width: 95%;
     }
-    
+
     .headerBar {
         height: 10vh;
     }
-    
+
     #menu {
-        z-index: 2;
+        z-index: 3;
         display: block;
         position: fixed;
-        right: 0;
-        top: 0;
-        margin-right: 15px;
-        margin-top: 1.25vh;
+        right: 20px;
+        top: 20px;
     }
-    
+
     .headerElements {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 220px;
+        height: auto;
+        margin: 0;
+        border: 2px solid var(--dark-theme);
+        border-radius: 12px;
+        box-shadow: 4px 4px var(--dark-theme);
         z-index: 2;
         transition: ease 400ms;
         transform: translateX(300px);
         align-self: flex-start;
         flex-direction: column;
-        align-items: flex-start;
-        border-top: none;
-        border-right: none;
-        gap: 2vh;
-        padding-top: 40px;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 15px;
+        padding: 60px 20px 20px 20px;
         font-size: min(4vw, 1.3rem);
         background: var(--white-theme);
-        border-radius: 0px 0px 0px 5px;
     }
-    
+
+    .headerElements>a {
+        height: auto;
+    }
+
     .headerElements.headerElementsActive {
         transform: translateX(0px);
     }
-    
+
     .joinUs:last-child {
         display: block;
         align-self: center;
         margin: 0;
         font-weight: 600;
-        height: 100%;
+        height: auto;
         background: var(--brown-theme);
         color: var(--white-theme);
     }
@@ -454,12 +482,12 @@ h4 {
     .countdownTimer {
         font-size: 1.5rem;
     }
-    
-    .countdownTimer > span > span:nth-child(1) {
+
+    .countdownTimer>span>span:nth-child(1) {
         font-size: 2.5rem;
     }
 
-    .countdownTimer > span > span:nth-child(2){
+    .countdownTimer>span>span:nth-child(2) {
         font-size: 1.1rem;
     }
 
@@ -467,7 +495,7 @@ h4 {
         font-size: clamp(0.5rem, 1rem, 1rem);
     }
 
-    .footer > span:nth-child(2) > a > p {
+    .footer>span:nth-child(2)>a>p {
         display: none;
     }
 
@@ -475,21 +503,32 @@ h4 {
 
 /* Đặt trong thẻ <style> hoặc file .css */
 body {
-    background-color: #1a202c; /* Màu nền tối để thấy tuyết rõ hơn */
+    background-color: #1a202c;
+    /* Màu nền tối để thấy tuyết rõ hơn */
     margin: 0;
-    overflow-x: hidden; /* Ẩn thanh cuộn ngang */
+    overflow-x: hidden;
+    /* Ẩn thanh cuộn ngang */
+}
+
+body.no-scroll {
+    overflow: hidden;
 }
 
 .snowflake {
     position: fixed;
     top: -10px;
-    z-index: 9999; /* Đảm bảo tuyết luôn nằm trên cùng */
-    color: #5d7299; /* Màu tuyết */
+    z-index: 1;
+    /* Đảm bảo tuyết nằm dưới các lớp phủ điều hướng */
+    color: #5d7299;
+    /* Màu tuyết */
     font-size: 1em;
-    user-select: none; /* Không cho phép bôi đen */
-    pointer-events: none; /* Chuột có thể bấm xuyên qua tuyết */
-    border-radius: 50%; /* Làm tròn nếu dùng background màu */
-    
+    user-select: none;
+    /* Không cho phép bôi đen */
+    pointer-events: none;
+    /* Chuột có thể bấm xuyên qua tuyết */
+    border-radius: 50%;
+    /* Làm tròn nếu dùng background màu */
+
     /* Hiệu ứng rơi */
     animation-name: fall;
     animation-timing-function: linear;
@@ -498,7 +537,8 @@ body {
 
 @keyframes fall {
     to {
-        transform: translateY(105vh); /* Rơi xuống quá chiều cao màn hình một chút */
+        transform: translateY(105vh);
+        /* Rơi xuống quá chiều cao màn hình một chút */
     }
 }
 
@@ -522,7 +562,7 @@ body {
         /* height: 100%; */
         transform: scaleX(1);
     }
-    
+
     100% {
         display: none;
         opacity: 0;
@@ -530,3 +570,11 @@ body {
         transform: scaleX(0);
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .hero {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        aspect-ratio: 2838 / 1080;
+    }
