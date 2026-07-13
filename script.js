@@ -5,46 +5,24 @@ var lastY = 0;
 const header = document.getElementById("header");
 
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("../header.html")
-    .then((response) => response.text())
-    .then((data) => {
-      if (header) {
-        header.innerHTML = data;
+  const menu = document.getElementById("menu");
+  const headerElements = document.getElementById("headerElements");
+
+  if (menu && headerElements) {
+    menu.addEventListener("click", function () {
+      if (headerElements.classList.contains("headerElementsActive")) {
+        headerElements.classList.remove("headerElementsActive");
+        headerElements.className = "headerElements";
+        menu.innerHTML = "menu"; // Icon 3 gạch (Material Icon text)
+        document.body.classList.remove("no-scroll");
+      } else {
+        headerElements.classList.add("headerElementsActive");
+        menu.innerHTML = "close"; // Icon dấu X
+        document.body.classList.add("no-scroll");
       }
-
-      const menu = document.getElementById("menu");
-      const headerElements = document.getElementById("headerElements");
-
-      if (menu && headerElements) {
-        menu.addEventListener("click", function () {
-          if (headerElements.classList.contains("headerElementsActive")) {
-            headerElements.classList.remove("headerElementsActive");
-            headerElements.className = "headerElements";
-            menu.innerHTML = "menu"; // Icon 3 gạch (Material Icon text)
-          } else {
-            headerElements.classList.add("headerElementsActive");
-            menu.innerHTML = "close"; // Icon dấu X
-          }
-        });
-      }
-
-      highlightCurrentPage();
-    })
-    .catch((err) => console.error("Lỗi tải header:", err));
+    });
+  }
 });
-
-function highlightCurrentPage() {
-  const pathParts = window.location.pathname.split("/");
-  const pageName = pathParts[1] ? "../" + pathParts[1] : "../index.html";
-
-  const headerLinks = document.querySelectorAll(".headerElements a");
-
-  headerLinks.forEach((link) => {
-    if (link.getAttribute("href") === pageName) {
-      link.style.color = "var(--brown-theme)";
-    }
-  });
-}
 
 window.onscroll = function () {
   scrollFunction();
@@ -130,10 +108,10 @@ function updateCountdown() {
     }
   }
 
-  days.innerHTML = norm(d);
-  hours.innerHTML = norm(h);
-  minutes.innerHTML = norm(m);
-  seconds.innerHTML = norm(s);
+  if (days) days.innerHTML = norm(d);
+  if (hours) hours.innerHTML = norm(h);
+  if (minutes) minutes.innerHTML = norm(m);
+  if (seconds) seconds.innerHTML = norm(s);
 }
 
 updateCountdown();

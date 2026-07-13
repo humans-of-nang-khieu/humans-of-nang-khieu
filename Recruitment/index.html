@@ -1,649 +1,560 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Humans of Năng Khiếu</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="../assets25/font/fontawesome/css/fontawesome.css"
-    />
-    <link rel="stylesheet" href="../assets25/font/fontawesome/css/brands.css" />
-    <link
-      rel="stylesheet"
-      href="../assets25/font/fontawesome/css/regular.css"
-    />
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="../assets25/logo.png" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  </head>
-  <body>
-    <div id="header" class="header"></div>
-    <div class="main">
-      <div class="hero"></div>
-      <div class="page-intro">
-        <h1>LỜI NGỎ VIẾT TIẾP<br />CÂU CHUYỆN THANH XUÂN</h1>
-        <p>
-          “Xin chào những mảnh ghép rực rỡ của Phổ thông Năng khiếu!
-          <br /><br />
-          Đây là lời nhắn gửi thân thương từ Humans of Năng Khiếu (HNK) - nơi
-          lưu giữ nhịp đập cảm xúc của chúng mình dưới mái trường này. Hôm nay,
-          một cột mốc mới lại được đánh dấu trên hành trình ấy:
-        </p>
-        <span>
-          <b
-            >HUMANS OF NĂNG KHIẾU CHÍNH THỨC<br />MỞ ĐƠN TUYỂN THÀNH VIÊN NHIỆM
-            KỲ 2025 - 2026</b
-          >
-        </span>
-        <p>
-          Từ những bài viết chạm đến đáy tim, những khung hình gói ghém trọn vẹn
-          từng khoảnh khắc, cho đến những sự kiện bùng nổ kết nối hàng ngàn học
-          sinh - HNK tự hào là nơi mọi thanh âm, rung động và sắc màu của Năng
-          Khiếu được chắt chiu, trân trọng và lan tỏa.<br /><br />
-          Trên hành trình không ngừng chuyển mình và chuyên nghiệp hóa, HNK mong
-          muốn tìm kiếm những người bạn đồng hành mới. Chúng mình không chỉ tìm
-          kiếm kỹ năng, chúng mình tìm kiếm những tâm hồn đồng điệu – những
-          người trẻ nhiệt huyết, sáng tạo và khao khát được cống hiến để kể tiếp
-          những câu chuyện bình dị mà thân thương nhất.<br /><br />
-          Hệ sinh thái của HNK nhiệm kỳ này đang rộng mở chào đón các tài năng
-          tại 07 ban chuyên môn:<br /><br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;&nbsp;<b
-            >Ban Nội dung & Ban Báo chí:</b
-          >
-          Nơi câu chữ tìm thấy tiếng nói.<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;&nbsp;<b
-            >Ban Thiết kế & Ban Nhiếp ảnh:</b
-          >
-          Nơi hình ảnh hóa những ý tưởng. <br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;&nbsp;<b
-            >Ban Chương trình, Ban Hậu cần & Ban Đối ngoại:</b
-          >
-          Nơi hiện thực hóa những giấc mơ sự kiện.<br /><br />
-          Cánh cửa gia đình Humans of Năng Khiếu đã mở. Đừng ngần ngại bước tới
-          để cùng chúng mình viết tiếp những chương rực rỡ nhất cho thanh xuân
-          Năng Khiếu của bạn nhé!”
-        </p>
-      </div>
-      <div class="page-body">
-        <h2>THÔNG TIN ĐỢT TUYỂN</h2>
-        <div class="generalInfo">
-          <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;&nbsp;<b
-              >Đối tượng tham gia:</b
-            >
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Humans of Năng Khiếu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../assets25/font/fontawesome/css/fontawesome.css" />
+  <link rel="stylesheet" href="../assets25/font/fontawesome/css/brands.css" />
+  <link rel="stylesheet" href="../assets25/font/fontawesome/css/regular.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="recruitment.css" />
+  <link rel="icon" type="image/x-icon" href="../assets25/logo.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="header" class="header">
+    <a class="logo" href="../index.html" target="_self">
+      <img src="../assets25/logo.png" alt="HNK Logo" draggable="false" />
+    </a>
+    <span id="headerElements" class="headerElements">
+      <a class="home" href="../index.html">HNK 2025</a>
+      <a class="coreTeam" href="../CoreTeam/index.html">HNK-er</a>
+      <a class="recruitment active" href="index.html">TUYỂN</a>
+      <a class="joinUs" href="https://forms.gle/ZBv9YmR9RPH5ufGBA" target="_blank">VÀO HNK</a>
+    </span>
+    <a class="joinUs" href="https://forms.gle/ZBv9YmR9RPH5ufGBA" target="_blank">VÀO HNK</a>
+    <div id="menu" class="material-symbols-outlined">menu</div>
+  </div>
+  <div class="main">
+    <div class="hero"></div>
+    <div class="page-intro">
+      <h1>LỜI NGỎ VIẾT TIẾP<br />CÂU CHUYỆN THANH XUÂN</h1>
+      <p>
+        “Xin chào những mảnh ghép rực rỡ của Phổ thông Năng khiếu!
+        <br /><br />
+        Đây là lời nhắn gửi thân thương từ Humans of Năng Khiếu (HNK) - nơi
+        lưu giữ nhịp đập cảm xúc của chúng mình dưới mái trường này. Hôm nay,
+        một cột mốc mới lại được đánh dấu trên hành trình ấy:
+      </p>
+      <span>
+        <b>HUMANS OF NĂNG KHIẾU CHÍNH THỨC<br />MỞ ĐƠN TUYỂN THÀNH VIÊN NHIỆM
+          KỲ 2025 - 2026</b>
+      </span>
+      <p>
+        Từ những bài viết chạm đến đáy tim, những khung hình gói ghém trọn vẹn
+        từng khoảnh khắc, cho đến những sự kiện bùng nổ kết nối hàng ngàn học
+        sinh - HNK tự hào là nơi mọi thanh âm, rung động và sắc màu của Năng
+        Khiếu được chắt chiu, trân trọng và lan tỏa.<br /><br />
+        Trên hành trình không ngừng chuyển mình và chuyên nghiệp hóa, HNK mong
+        muốn tìm kiếm những người bạn đồng hành mới. Chúng mình không chỉ tìm
+        kiếm kỹ năng, chúng mình tìm kiếm những tâm hồn đồng điệu – những
+        người trẻ nhiệt huyết, sáng tạo và khao khát được cống hiến để kể tiếp
+        những câu chuyện bình dị mà thân thương nhất.<br /><br />
+        Hệ sinh thái của HNK nhiệm kỳ này đang rộng mở chào đón các tài năng tại 07 ban chuyên môn:
+      </p>
+      <ul class="intro-list">
+        <li><b>Ban Nội dung & Ban Báo chí:</b> Nơi câu chữ tìm thấy tiếng nói.</li>
+        <li><b>Ban Thiết kế & Ban Nhiếp ảnh:</b> Nơi hình ảnh hóa những ý tưởng.</li>
+        <li><b>Ban Chương trình, Ban Hậu cần & Ban Đối ngoại:</b> Nơi hiện thực hóa những giấc mơ sự kiện.</li>
+      </ul>
+      <p>
+        Cánh cửa gia đình Humans of Năng Khiếu đã mở. Đừng ngần ngại bước tới
+        để cùng chúng mình viết tiếp những chương rực rỡ nhất cho thanh xuân
+        Năng Khiếu của bạn nhé!”
+      </p>
+    </div>
+    <div class="page-body">
+      <h2>THÔNG TIN ĐỢT TUYỂN</h2>
+      <div class="generalInfo">
+        <ul class="info-list">
+          <li><b>Đối tượng tham gia:</b>
             Tất cả các bạn học sinh đang theo học tại trường Phổ thông Năng
-            khiếu, ĐHQG-HCM (Ưu tiên các bạn học sinh khóa 24-27 và 25-28).<br /><br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;&nbsp;<b
-              >Thời gian nhiệm kỳ:</b
-            >
-            Từ tháng 12/2025 đến tháng 09/2026.<br /><br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;&nbsp;<b>Phạm vi hoạt động:</b>
+            khiếu, ĐHQG-HCM (Ưu tiên các bạn học sinh khóa 24-27 và 25-28).</li>
+          <li><b>Thời gian nhiệm kỳ:</b>
+            Từ tháng 12/2025 đến tháng 09/2026.</li>
+          <li><b>Phạm vi hoạt động:</b>
             ONLINE (trên các nền tảng mạng xã hội) và OFFLINE (tại cả hai cơ sở
-            An Đông và Đông Hòa) trong khuôn khổ trường Phổ thông Năng khiếu.<br /><br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;&nbsp;<b
-              >Quy trình đợt tuyển:</b
-            >
-            Bao gồm 1 vòng đơn và 1 vòng phỏng vấn<br /><br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;&nbsp;<b
-              >Hình thức chấm đơn:</b
-            >
+            An Đông và Đông Hòa) trong khuôn khổ trường Phổ thông Năng khiếu.</li>
+          <li><b>Quy trình đợt tuyển:</b>
+            Bao gồm 1 vòng đơn và 1 vòng phỏng vấn.</li>
+          <li><b>Hình thức chấm đơn:</b>
             Rolling basis (Ưu tiên xét duyệt hồ sơ và gửi thư mời phỏng vấn theo
-            thứ tự thời gian nộp đơn sớm).<br /><br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;&nbsp;<b>Hạn chót vòng đơn:</b>
-            23h59' Thứ Hai (29/12/2025)
-          </p>
-        </div>
-        <h2>MÔ TẢ CÔNG VIỆC</h2>
-        <div class="mainRequirements">
-          <div class="department">
-            <div class="subTitle">
-              <span class="subDescription">
-                <span>TỔNG QUAN</span>
-                <span>#Humans_of_Nang_Khieu</span>
-                <span></span>
-              </span>
+            thứ tự thời gian nộp đơn sớm).</li>
+          <li><b>Hạn chót vòng đơn:</b>
+            23h59' Thứ Hai (29/12/2025).</li>
+        </ul>
+      </div>
+      <h2>MÔ TẢ CÔNG VIỆC</h2>
+      <div class="mainRequirements">
+        <div class="department">
+          <div class="subTitle">
+            <div class="subDescription">
+              <span>TỔNG QUAN</span>
+              <span>#Humans_of_Nang_Khieu</span>
+              <span></span>
             </div>
-            <div class="requirements">
-              <div class="container">
-                <span>TRÁCH NHIỆM</span>
-                <p>
-                  &#8226; Tham gia tích cực vào quá trình lên kế hoạch, chuẩn bị
+          </div>
+          <div class="requirements">
+            <div class="container">
+              <span>TRÁCH NHIỆM</span>
+              <ul class="requirements-list">
+                <li>Tham gia tích cực vào quá trình lên kế hoạch, chuẩn bị
                   và trực tiếp làm staff hỗ trợ trong các sự kiện lớn nhỏ do
                   Humans of Năng Khiếu tổ chức (Mùa Yêu, Tập san, Talkshow Hướng
-                  nghiệp...).
-                  <br /><br />
-                  &#8226; Tham gia đầy đủ các buổi họp định kỳ (trực tuyến và
+                  nghiệp...).</li>
+                <li>Tham gia đầy đủ các buổi họp định kỳ (trực tuyến và
                   trực tiếp) cũng như các hoạt động gắn kết nội bộ (bonding) của
-                  CLB.
-                  <br /><br />
-                  &#8226; Hoàn thành đầy đủ, đảm bảo chất lượng và đúng thời hạn
-                  các công việc được giao từ Ban điều hành hoặc Trưởng ban.
-                  <br /><br />
-                  &#8226; Hoàn thành đầy đủ, đảm bảo chất lượng và đúng thời hạn
+                  CLB.</li>
+                <li>Hoàn thành đầy đủ, đảm bảo chất lượng và đúng thời hạn
                   các công việc được giao từ Ban điều hành hoặc Trưởng ban. Chủ
                   động đóng góp ý kiến, sáng kiến nhằm xây dựng và nâng cao hiệu
-                  quả hoạt động chung của CLB.
-                  <br /><br />
-                  &#8226; Giữ gìn hình ảnh và văn hóa của Humans of Năng Khiếu
-                  trong quá trình hoạt động và giao tiếp.
-                  <br /><br />
-                </p>
-              </div>
-              <div class="container">
-                <span>YÊU CẦU</span>
-                <p>
-                  &#8226; <b>Cam kết đồng hành:</b> Có khả năng làm việc và gắn
+                  quả hoạt động chung của CLB.</li>
+                <li>Giữ gìn hình ảnh và văn hóa của Humans of Năng Khiếu
+                  trong quá trình hoạt động và giao tiếp.</li>
+              </ul>
+            </div>
+            <div class="container">
+              <span>YÊU CẦU</span>
+              <ul class="requirements-list">
+                <li><b>Cam kết đồng hành:</b> Có khả năng làm việc và gắn
                   bó xuyên suốt cùng CLB trong một nhiệm kỳ (từ tháng 12/2025 -
-                  09/2026). <br /><br />
-                  &#8226; Có tinh thần trách nhiệm cao, sự chủ động, cầu thị và
-                  ham học hỏi trong công việc.
-                  <br /><br />
-                  &#8226; Cởi mở, biết lắng nghe, tôn trọng mọi người và hòa
-                  đồng trong các hoạt động tập thể.
-                  <br /><br />
-                  &#8226; Có tinh thần học hỏi, biết rút kinh nghiệm và khắc
-                  phục những điểm yếu của bản thân.
-                  <br /><br />
-                  &#8226; Có kiến thức và kỹ năng sử dụng các công cụ văn phòng
+                  09/2026).</li>
+                <li>Có tinh thần trách nhiệm cao, sự chủ động, cầu thị và
+                  ham học hỏi trong công việc.</li>
+                <li>Cởi mở, biết lắng nghe, tôn trọng mọi người và hòa
+                  đồng trong các hoạt động tập thể.</li>
+                <li>Có tinh thần học hỏi, biết rút kinh nghiệm và khắc
+                  phục những điểm yếu của bản thân.</li>
+                <li>Có kiến thức và kỹ năng sử dụng các công cụ văn phòng
                   cơ bản phục vụ cho công việc (Google Drive, Google Docs,
-                  Google Sheets,...).
-                  <br /><br />
-                  &#8226; Có khả năng sắp xếp thời gian hợp lý để cân bằng giữa
-                  việc học và hoạt động CLB.
-                </p>
-              </div>
+                  Google Sheets,...).</li>
+                <li>Có khả năng sắp xếp thời gian hợp lý để cân bằng giữa
+                  việc học và hoạt động CLB.</li>
+              </ul>
             </div>
           </div>
-          <div class="department-parent">
-            <div class="subTitle">
-              <div class="subDescription">
-                <span>BAN TRUYỀN THÔNG</span>
-                <span
-                  >#ban_truyen_thong&nbsp;&nbsp;&nbsp;#public_relations&nbsp;&nbsp;&nbsp;#pr</span
-                >
-                <span></span>
-              </div>
+        </div>
+        <div class="department-parent">
+          <div class="subTitle">
+            <div class="subDescription">
+              <span>BAN TRUYỀN THÔNG</span>
+              <span>#ban_truyen_thong&nbsp;&nbsp;&nbsp;#public_relations&nbsp;&nbsp;&nbsp;#pr</span>
+              <span></span>
             </div>
-            <div class="children">
-              <div class="department">
-                <div class="subTitle">
-                  <div class="subDescription">
-                    <span>BAN NỘI DUNG</span>
-                    <span
-                      >#ban_noi_dung&nbsp;&nbsp;&nbsp;#content&nbsp;&nbsp;&nbsp;#post</span
-                    >
-                    <span></span>
-                  </div>
+          </div>
+          <div class="children">
+            <div class="department">
+              <div class="subTitle">
+                <div class="subDescription">
+                  <span>BAN NỘI DUNG</span>
+                  <span>#ban_noi_dung&nbsp;&nbsp;&nbsp;#content&nbsp;&nbsp;&nbsp;#post</span>
+                  <span></span>
                 </div>
-                <div class="requirements">
-                  <div class="container">
-                    <span>MÔ TẢ CÔNG VIỆC</span>
-                    <p>
-                      &#8226; Trực tiếp lên ý tưởng và viết bài cho Fanpage/kênh
+              </div>
+              <div class="requirements">
+                <div class="container">
+                  <span>MÔ TẢ CÔNG VIỆC</span>
+                  <ul class="requirements-list">
+                    <li>Trực tiếp lên ý tưởng và viết bài cho Fanpage/kênh
                       chính thức của HNK; đây là cơ hội để các sản phẩm câu chữ
                       mang dấu ấn cá nhân của bạn được đăng tải và lan tỏa đến
-                      cộng đồng.
-                      <br /><br />
-                      &#8226; Thực hiện phỏng vấn, khai thác và chuyển hóa những
+                      cộng đồng.</li>
+                    <li>Thực hiện phỏng vấn, khai thác và chuyển hóa những
                       chia sẻ thô thành các bài viết nhân vật, caption sâu sắc;
                       qua đó rèn luyện kỹ năng viết lách, biên tập và tư duy kể
-                      chuyện chạm đến cảm xúc.
-                      <br /><br />
-                      &#8226; Tham gia brainstorming, xây dựng tuyến nội dung
+                      chuyện chạm đến cảm xúc.</li>
+                    <li>Tham gia brainstorming, xây dựng tuyến nội dung
                       (content pillars) và kịch bản cho các chuỗi sự kiện lớn
                       (Mùa Yêu, Talkshow...); được hướng dẫn và làm việc trong
-                      quy trình sáng tạo bài bản, chuyên nghiệp.
-                      <br /><br />
-                      &#8226; Kết hợp chặt chẽ cùng Ban Thiết kế, Ban Nhiếp ảnh
+                      quy trình sáng tạo bài bản, chuyên nghiệp.</li>
+                    <li>Kết hợp chặt chẽ cùng Ban Thiết kế, Ban Nhiếp ảnh
                       và Ban Báo chí để đảm bảo sự thống nhất giữa "lời văn" và
                       "hình ảnh", giúp bạn hiểu rõ hơn về cách vận hành của một
-                      tổ chức truyền thông thực thụ.
-                    </p>
-                  </div>
-                  <div class="container">
-                    <span>YÊU CẦU CHUYÊN MÔN</span>
-                    <p>
-                      &#8226; Có khả năng diễn đạt mạch lạc, vốn từ phong phú và
+                      tổ chức truyền thông thực thụ.</li>
+                  </ul>
+                </div>
+                <div class="container">
+                  <span>YÊU CẦU CHUYÊN MÔN</span>
+                  <ul class="requirements-list">
+                    <li>Có khả năng diễn đạt mạch lạc, vốn từ phong phú và
                       văn phong linh hoạt - biết cách giữ sự chuyên nghiệp nhưng
-                      vẫn đong đầy cảm xúc trong từng câu chữ.
-                      <br /><br />
-                      &#8226; Nhạy bén trong quan sát, biết lắng nghe và thấu
+                      vẫn đong đầy cảm xúc trong từng câu chữ.</li>
+                    <li>Nhạy bén trong quan sát, biết lắng nghe và thấu
                       hiểu con người để tìm thấy những "cốt truyện" đắt giá ngay
-                      trong cuộc sống học đường thường nhật.
-                      <br /><br />
-                      &#8226; Có tư duy storytelling và biên tập nội dung, biết
+                      trong cuộc sống học đường thường nhật.</li>
+                    <li>Có tư duy storytelling và biên tập nội dung, biết
                       cách sắp xếp và truyền tải thông điệp qua từng chi tiết
-                      nhỏ.
-                      <br /><br />
-                      &#8226; Có trách nhiệm cao với deadline, không ngại sửa
+                      nhỏ.</li>
+                    <li>Có trách nhiệm cao với deadline, không ngại sửa
                       đổi bài viết nhiều lần và luôn chủ động cập nhật các xu
-                      hướng viết mới để làm mới bản thân.
-                      <br /><br />
-                      &#8226; Mong muốn gắn bó lâu dài, coi trọng việc kết nối
-                      với những người có chung đam mê.
-                    </p>
-                  </div>
+                      hướng viết mới để làm mới bản thân.</li>
+                    <li>Mong muốn gắn bó lâu dài, coi trọng việc kết nối
+                      với những người có chung đam mê.</li>
+                  </ul>
                 </div>
               </div>
-              <div class="department">
-                <div class="subTitle">
-                  <div class="subDescription">
-                    <span>BAN BÁO CHÍ</span>
-                    <span
-                      >#ban_bao_chi&nbsp;&nbsp;&nbsp;#journalism&nbsp;&nbsp;&nbsp;#news&nbsp;&nbsp;&nbsp;#official_channel</span
-                    >
-                    <span></span>
-                  </div>
+            </div>
+            <div class="department">
+              <div class="subTitle">
+                <div class="subDescription">
+                  <span>BAN BÁO CHÍ</span>
+                  <span>#ban_bao_chi&nbsp;&nbsp;&nbsp;#journalism&nbsp;&nbsp;&nbsp;#news&nbsp;&nbsp;&nbsp;#official_channel</span>
+                  <span></span>
                 </div>
-                <div class="requirements">
-                  <div class="container">
-                    <span>MÔ TẢ CÔNG VIỆC</span>
-                    <p>
-                      &#8226; Trực tiếp tham gia phỏng vấn nóng, viết bài và
+              </div>
+              <div class="requirements">
+                <div class="container">
+                  <span>MÔ TẢ CÔNG VIỆC</span>
+                  <ul class="requirements-list">
+                    <li>Trực tiếp tham gia phỏng vấn nóng, viết bài và
                       biên tập tin tức về các hoạt động của CLB/Nhà trường; qua
                       đó rèn luyện sự nhạy bén và kỹ năng phản xạ tin tức thực
-                      tế.
-                      <br /><br />
-                      &#8226; Sáng tạo và phát triển các chuỗi bài (series),
+                      tế.</li>
+                    <li>Sáng tạo và phát triển các chuỗi bài (series),
                       chuyên mục đặc biệt hoặc chiến dịch truyền thông ngắn hạn;
                       bạn được tự do thể hiện quan điểm và tạo dấu ấn cá nhân
-                      trên các kênh chính thức của HNK.
-                      <br /><br />
-                      &#8226; Tham gia lên concept và định hướng truyền thông
+                      trên các kênh chính thức của HNK.</li>
+                    <li>Tham gia lên concept và định hướng truyền thông
                       cho các sự kiện lớn (Noel, Lễ ra trường...); học cách tư
                       duy chiến lược để đảm bảo thông điệp luôn đúng, đủ và thu
-                      hút.
-                      <br /><br />
-                      &#8226; Đảm bảo mọi ấn phẩm đều phản ánh đúng giọng điệu
+                      hút.</li>
+                    <li>Đảm bảo mọi ấn phẩm đều phản ánh đúng giọng điệu
                       nhiệt huyết và cá tính của HNK, đồng thời làm việc trong
-                      môi trường chuyên nghiệp, tôn trọng sự sáng tạo.
-                    </p>
-                  </div>
-                  <div class="container">
-                    <span>YÊU CẦU CHUYÊN MÔN</span>
-                    <p>
-                      &#8226; Có khả năng viết lách tốt, văn phong báo chí gãy
+                      môi trường chuyên nghiệp, tôn trọng sự sáng tạo.</li>
+                  </ul>
+                </div>
+                <div class="container">
+                  <span>YÊU CẦU CHUYÊN MÔN</span>
+                  <ul class="requirements-list">
+                    <li>Có khả năng viết lách tốt, văn phong báo chí gãy
                       gọn, gieo vần hoặc storytelling lôi cuốn; (ưu tiên) các
                       bạn muốn được đào tạo chuyên sâu về kỹ năng viết và biên
-                      tập.
-                      <br /><br />
-                      &#8226; Có tư duy sáng tạo, không ngại thử nghiệm những
+                      tập.</li>
+                    <li>Có tư duy sáng tạo, không ngại thử nghiệm những
                       nội dung mới mẻ và biết cách nhìn nhận sự việc dưới nhiều
-                      góc độ để khai thác đề tài.
-                      <br /><br />
-                      &#8226; Có tư duy storytelling và biên tập nội dung, biết
+                      góc độ để khai thác đề tài.</li>
+                    <li>Có tư duy storytelling và biên tập nội dung, biết
                       cách sắp xếp và truyền tải thông điệp qua từng chi tiết
-                      nhỏ.
-                      <br /><br />
-                      &#8226; Có tinh thần hợp tác, chủ động trong công việc và
+                      nhỏ.</li>
+                    <li>Có tinh thần hợp tác, chủ động trong công việc và
                       cầu thị khi đón nhận feedback để cùng nhau phát triển
-                      trong một môi trường lành mạnh.
-                      <br /><br />
-                      &#8226; Có trách nhiệm cao với chất lượng sản phẩm chung,
+                      trong một môi trường lành mạnh.</li>
+                    <li>Có trách nhiệm cao với chất lượng sản phẩm chung,
                       mong muốn gắn bó lâu dài để làm đẹp hồ sơ năng lực
                       (portfolio) và nhận chứng nhận (certificate) giá trị từ
-                      HNK.
-                    </p>
-                  </div>
+                      HNK.</li>
+                  </ul>
                 </div>
               </div>
-              <div class="department">
-                <div class="subTitle">
-                  <div class="subDescription">
-                    <span>BAN NHIẾP ẢNH</span>
-                    <span
-                      >#ban_nhiep_anh&nbsp;&nbsp;&nbsp;#photo&nbsp;&nbsp;&nbsp;#visual</span
-                    >
-                    <span></span>
-                  </div>
+            </div>
+            <div class="department">
+              <div class="subTitle">
+                <div class="subDescription">
+                  <span>BAN NHIẾP ẢNH</span>
+                  <span>#ban_nhiep_anh&nbsp;&nbsp;&nbsp;#photo&nbsp;&nbsp;&nbsp;#visual</span>
+                  <span></span>
                 </div>
-                <div class="requirements">
-                  <div class="container">
-                    <span>MÔ TẢ CÔNG VIỆC</span>
-                    <p>
-                      &#8226; Chịu trách nhiệm sản xuất và định hướng hình ảnh
+              </div>
+              <div class="requirements">
+                <div class="container">
+                  <span>MÔ TẢ CÔNG VIỆC</span>
+                  <ul class="requirements-list">
+                    <li>Chịu trách nhiệm sản xuất và định hướng hình ảnh
                       cho các hoạt động truyền thông, đảm bảo thể hiện đúng chất
-                      và thông điệp cảm xúc của HNK.
-                      <br /><br />
-                      &#8226; Trực tiếp tham gia tác nghiệp tại các buổi chụp
+                      và thông điệp cảm xúc của HNK.</li>
+                    <li>Trực tiếp tham gia tác nghiệp tại các buổi chụp
                       (photoshoot), sự kiện và dự án thực tế; qua đó tích lũy
                       kinh nghiệm làm việc trong môi trường truyền thông chuyên
-                      nghiệp.
-                      <br /><br />
-                      &#8226; Phối hợp cùng Ban Nội dung và Thiết kế để lên ý
+                      nghiệp.</li>
+                    <li>Phối hợp cùng Ban Nội dung và Thiết kế để lên ý
                       tưởng (concept), đồng thời rèn luyện tư duy sáng tạo thông
-                      qua việc giải quyết các bài toán về thị giác.
-                      <br /><br />
-                      &#8226; Thực hiện hậu kỳ (chỉnh sửa, retouch) để đảm bảo
+                      qua việc giải quyết các bài toán về thị giác.</li>
+                    <li>Thực hiện hậu kỳ (chỉnh sửa, retouch) để đảm bảo
                       chất lượng thẩm mỹ cao nhất, đồng thời có cơ hội nâng cao
-                      kỹ năng sử dụng các phần mềm chuyên dụng.
-                    </p>
-                  </div>
-                  <div class="container">
-                    <span>YÊU CẦU CHUYÊN MÔN</span>
-                    <p>
-                      &#8226; Có đam mê nhiếp ảnh, gu thẩm mỹ tốt và hiểu biết
+                      kỹ năng sử dụng các phần mềm chuyên dụng.</li>
+                  </ul>
+                </div>
+                <div class="container">
+                  <span>YÊU CẦU CHUYÊN MÔN</span>
+                  <ul class="requirements-list">
+                    <li>Có đam mê nhiếp ảnh, gu thẩm mỹ tốt và hiểu biết
                       cơ bản về tư duy kể chuyện bằng hình ảnh (visual
-                      storytelling).
-                      <br /><br />
-                      &#8226; Biết sử dụng máy ảnh và các công cụ chỉnh sửa
+                      storytelling).</li>
+                    <li>Biết sử dụng máy ảnh và các công cụ chỉnh sửa
                       (Lightroom/Photoshop) là một lợi thế; hoặc có tinh thần
                       cầu thị, ham học hỏi để tiếp thu kiến thức trong quá trình
-                      hoạt động.
-                      <br /><br />
-                      &#8226; Có khả năng làm việc nhóm hiệu quả, quản lý thời
+                      hoạt động.</li>
+                    <li>Có khả năng làm việc nhóm hiệu quả, quản lý thời
                       gian tốt và linh hoạt xử lý các tình huống phát sinh trong
-                      quá trình set-up buổi chụp.
-                      <br /><br />
-                      &#8226; Có tinh thần trách nhiệm cao, cam kết đồng hành
+                      quá trình set-up buổi chụp.</li>
+                    <li>Có tinh thần trách nhiệm cao, cam kết đồng hành
                       xuyên suốt nhiệm kỳ để cùng tạo nên những giá trị chung và
-                      nhận được sự công nhận (certificate) từ HNK.
-                    </p>
-                  </div>
+                      nhận được sự công nhận (certificate) từ HNK.</li>
+                  </ul>
                 </div>
               </div>
-              <div class="department">
-                <div class="subTitle">
-                  <div class="subDescription">
-                    <span>BAN THIẾT KẾ</span>
-                    <span
-                      >#ban_thiet_ke&nbsp;&nbsp;&nbsp;#graphic_design&nbsp;&nbsp;&nbsp;#visual_art</span
-                    >
-                    <span></span>
-                  </div>
+            </div>
+            <div class="department">
+              <div class="subTitle">
+                <div class="subDescription">
+                  <span>BAN THIẾT KẾ</span>
+                  <span>#ban_thiet_ke&nbsp;&nbsp;&nbsp;#graphic_design&nbsp;&nbsp;&nbsp;#visual_art</span>
+                  <span></span>
                 </div>
-                <div class="requirements">
-                  <div class="container">
-                    <span>MÔ TẢ CÔNG VIỆC</span>
-                    <p>
-                      &#8226; Thực hiện các ấn phẩm truyền thông (Online) và bộ
+              </div>
+              <div class="requirements">
+                <div class="container">
+                  <span>MÔ TẢ CÔNG VIỆC</span>
+                  <ul class="requirements-list">
+                    <li>Thực hiện các ấn phẩm truyền thông (Online) và bộ
                       nhận diện sự kiện (Offline) cho HNK; đây là cơ hội tuyệt
                       vời để xây dựng portfolio cá nhân với những sản phẩm có độ
-                      phủ sóng cao trong cộng đồng học sinh.
-                      <br /><br />
-                      &#8226; Đảm bảo tính thống nhất và độc đáo cho hình ảnh
+                      phủ sóng cao trong cộng đồng học sinh.</li>
+                    <li>Đảm bảo tính thống nhất và độc đáo cho hình ảnh
                       của tổ chức trên các nền tảng; qua đó bạn được rèn luyện
                       tư duy về branding (xây dựng thương hiệu) và mỹ thuật ứng
-                      dụng.
-                      <br /><br />
-                      &#8226; Phối hợp chặt chẽ cùng Ban Nội dung và Sự kiện để
+                      dụng.</li>
+                    <li>Phối hợp chặt chẽ cùng Ban Nội dung và Sự kiện để
                       chuyển hóa những ý tưởng trừu tượng thành sản phẩm thị
                       giác cụ thể (poster, merchandise, backdrop...), nâng cao
-                      kỹ năng giải quyết vấn đề bằng hình ảnh.
-                    </p>
-                  </div>
-                  <div class="container">
-                    <span>YÊU CẦU CHUYÊN MÔN</span>
-                    <p>
-                      &#8226; Sử dụng cơ bản đến thành thạo ít nhất một phần mềm
+                      kỹ năng giải quyết vấn đề bằng hình ảnh.</li>
+                  </ul>
+                </div>
+                <div class="container">
+                  <span>YÊU CẦU CHUYÊN MÔN</span>
+                  <ul class="requirements-list">
+                    <li>Sử dụng cơ bản đến thành thạo ít nhất một phần mềm
                       thiết kế (Photoshop, Illustrator, Canva, Procreate...);
                       khuyến khích tinh thần học hỏi công cụ mới để đa dạng hóa
-                      kỹ năng tay nghề.
-                      <br /><br />
-                      &#8226; Nắm vững kiến thức nền tảng về đồ họa (bố cục, màu
+                      kỹ năng tay nghề.</li>
+                    <li>Nắm vững kiến thức nền tảng về đồ họa (bố cục, màu
                       sắc, typography) và có gu thẩm mỹ phù hợp với phong cách
-                      hiện đại, nhân văn của Humans of Năng Khiếu.
-                      <br /><br />
-                      &#8226; Có khả năng diễn đạt ý tưởng thiết kế một cách
+                      hiện đại, nhân văn của Humans of Năng Khiếu.</li>
+                    <li>Có khả năng diễn đạt ý tưởng thiết kế một cách
                       thuyết phục; chủ động sáng tạo và cởi mở đón nhận feedback
-                      để hoàn thiện sản phẩm tốt nhất.
-                      <br /><br />
-                      &#8226; Có trách nhiệm với deadline, cam kết đồng hành
+                      để hoàn thiện sản phẩm tốt nhất.</li>
+                    <li>Có trách nhiệm với deadline, cam kết đồng hành
                       cùng CLB để cùng tạo ra những giá trị chung và nhận giấy
-                      chứng nhận xác nhận năng lực sau nhiệm kỳ.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="department-parent">
-            <div class="subTitle">
-              <div class="subDescription">
-                <span>BAN SỰ KIỆN</span>
-                <span
-                  >#ban_su_kien&nbsp;&nbsp;&nbsp;#events&nbsp;&nbsp;&nbsp;#pg</span
-                >
-                <span></span>
-              </div>
-            </div>
-            <div class="children">
-              <div class="department">
-                <div class="subTitle">
-                  <div class="subDescription">
-                    <span>BAN CHƯƠNG TRÌNH</span>
-                    <span
-                      >#ban_chuong_trinh&nbsp;&nbsp;&nbsp;#program&nbsp;&nbsp;&nbsp;#event_planner</span
-                    >
-                    <span></span>
-                  </div>
-                </div>
-                <div class="requirements">
-                  <div class="container">
-                    <span>MÔ TẢ CÔNG VIỆC</span>
-                    <p>
-                      &#8226; Đóng vai trò là những "kiến trúc sư" và "đạo diễn"
-                      đứng sau sân khấu; trực tiếp lên ý tưởng (concept), kịch
-                      bản và timeline cho các sự kiện lớn (Mùa Yêu, Talkshow
-                      Hướng nghiệp, Tập san...).
-                      <br /><br />
-                      &#8226; Hiện thực hóa ý tưởng từ trên giấy ra thực tế; qua
-                      đó có cơ hội làm việc trực tiếp với các diễn giả, thạc sĩ,
-                      tiến sĩ và nghệ sĩ khách mời trong quá trình điều phối
-                      chương trình.
-                      <br /><br />
-                      &#8226; Xây dựng bảng biểu, phân chia nhân sự và kiểm soát
-                      tiến độ; giúp bạn rèn luyện toàn diện kỹ năng quản lý dự
-                      án và khả năng ứng biến linh hoạt trước mọi tình huống.
-                      <br /><br />
-                      &#8226; Phối hợp chặt chẽ với ban Hậu cần và Đối ngoại để
-                      đảm bảo sự kiện diễn ra liền mạch, chuyên nghiệp và để lại
-                      dấu ấn sâu đậm trong lòng người tham dự.
-                    </p>
-                  </div>
-                  <div class="container">
-                    <span>YÊU CẦU CHUYÊN MÔN</span>
-                    <p>
-                      &#8226; Có nhiều ý tưởng mới mẻ, góc nhìn phù hợp với thị
-                      hiếu học sinh và mong muốn được thử sức trong một môi
-                      trường năng động, tôn trọng sự khác biệt.
-                      <br /><br />
-                      &#8226; Biết cách sắp xếp thời gian khoa học, chịu được áp
-                      lực cao và thành thạo các công cụ hỗ trợ công việc (Google
-                      Docs, Sheets...).
-                      <br /><br />
-                      &#8226; Năng động, "giữ cái đầu lạnh" để xử lý tình huống
-                      phát sinh và đề cao tinh thần teamwork để cùng kết nối với
-                      những người bạn chung đam mê.
-                      <br /><br />
-                      &#8226; Có tinh thần trách nhiệm cao, không làm chậm trễ
-                      tiến độ chung và cam kết hoạt động hết mình để nhận Giấy
-                      chứng nhận (Certificate) từ Nhà trường sau nhiệm kỳ.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="department">
-                <div class="subTitle">
-                  <div class="subDescription">
-                    <span>BAN HẬU CẦN</span>
-                    <span
-                      >#ban_hau_can&nbsp;&nbsp;&nbsp;#logistics&nbsp;&nbsp;&nbsp;#support&nbsp;&nbsp;&nbsp;#event_management</span
-                    >
-                    <span></span>
-                  </div>
-                </div>
-                <div class="requirements">
-                  <div class="container">
-                    <span>MÔ TẢ CÔNG VIỆC</span>
-                    <p>
-                      &#8226; Lên danh sách, quản lý và điều phối toàn bộ hệ
-                      thống vật dụng, trang thiết bị (âm thanh, ánh sáng, đạo
-                      cụ...) cho sự kiện; qua đó rèn luyện tư duy tối ưu hóa chi
-                      phí và quản lý tài sản hiệu quả.
-                      <br /><br />
-                      &#8226; Trực tiếp thực hiện công tác mua sắm, set-up và
-                      bài trí không gian; bạn chính là những "đôi tay" biến
-                      những ý tưởng trên giấy của Ban Chương trình thành trải
-                      nghiệm thực tế sống động.
-                      <br /><br />
-                      &#8226; Đảm bảo mọi hoạt động diễn ra suôn sẻ, an toàn và
-                      đúng tiến độ; tham gia trực tiếp vào các khâu tổng duyệt,
-                      chạy chương trình để tích lũy kinh nghiệm xử lý tình huống
-                      (problem-solving) dưới áp lực cao.
-                      <br /><br />
-                      &#8226; Là hậu phương vững chắc, chuẩn bị từ những chi
-                      tiết nhỏ nhất để các bộ phận khác tỏa sáng; môi trường làm
-                      việc đề cao tinh thần đồng đội và sự gắn kết như một gia
-                      đình.
-                    </p>
-                  </div>
-                  <div class="container">
-                    <span>YÊU CẦU CHUYÊN MÔN</span>
-                    <p>
-                      &#8226; Có tinh thần trách nhiệm cực cao, sự tỉ mỉ, cẩn
-                      thận và luôn chủ động - vì Hậu cần là "xương sống" quyết
-                      định sự chỉn chu và an toàn của mọi sự kiện.
-                      <br /><br />
-                      &#8226; Có tư duy tổ chức, sắp xếp công việc khoa học; khả
-                      năng làm việc nhóm tốt và giao tiếp hiệu quả để phối hợp
-                      nhịp nhàng với các ban khác.
-                      <br /><br />
-                      &#8226; Năng động, sức khỏe tốt, không ngại khó khăn và
-                      sẵn sàng "lăn xả" trong các buổi set-up/thu dọn; (Lợi thế)
-                      Có phương tiện di chuyển cá nhân để chủ động trong việc
-                      vận chuyển và mua sắm.
-                      <br /><br />
-                      &#8226; Mong muốn gắn bó lâu dài, coi trọng giá trị tập
-                      thể và cam kết hoàn thành nhiệm vụ để nhận được Giấy chứng
-                      nhận (Certificate) ghi nhận những nỗ lực thầm lặng nhưng
-                      vô giá của bạn.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="department">
-                <div class="subTitle">
-                  <div class="subDescription">
-                    <span>BAN ĐỐI NGOẠI</span>
-                    <span
-                      >#ban_doi_ngoai&nbsp;&nbsp;&nbsp;#external_relations&nbsp;&nbsp;&nbsp;#partnership&nbsp;&nbsp;&nbsp;#sponsorship</span
-                    >
-                    <span></span>
-                  </div>
-                </div>
-                <div class="requirements">
-                  <div class="container">
-                    <span>MÔ TẢ CÔNG VIỆC</span>
-                    <p>
-                      &#8226; Chủ động tìm kiếm, liên hệ và thiết lập quan hệ
-                      với các Nhà tài trợ tiềm năng; đây là cơ hội vàng để bạn
-                      rèn luyện kỹ năng đàm phán, thuyết phục và bản lĩnh khi
-                      làm việc với các đối tác lớn.
-                      <br /><br />
-                      &#8226; Chịu trách nhiệm quản lý nguồn quỹ, lập bảng sao
-                      kê và báo cáo tài chính chi tiết; giúp bạn tiếp cận sớm
-                      với tư duy quản lý ngân sách và sự minh bạch trong quy
-                      trình kế toán.
-                      <br /><br />
-                      &#8226; Đảm bảo quyền lợi và duy trì mối quan hệ tốt đẹp
-                      với Nhà tài trợ trước - trong - sau sự kiện; qua đó học
-                      cách chăm sóc khách hàng và mở rộng mạng lưới quan hệ
-                      (network) chất lượng.
-                      <br /><br />
-                      &#8226; Là cầu nối đại diện cho sự chuyên nghiệp của HNK
-                      khi làm việc với bên ngoài; hoạt động trong môi trường
-                      thân thiện nhưng chuyên nghiệp, nơi bạn được đào tạo bài
-                      bản về kiến thức đối ngoại.
-                    </p>
-                  </div>
-                  <div class="container">
-                    <span>YÊU CẦU CHUYÊN MÔN</span>
-                    <p>
-                      &#8226; Hoạt bát, tự tin, ngôn từ linh hoạt và có khả năng
-                      thuyết phục người khác - những tố chất tiên quyết của một
-                      nhà ngoại giao tương lai.
-                      <br /><br />
-                      &#8226; Nhạy bén, ứng biến linh hoạt trước các tình huống
-                      phát sinh với đối tác và biết cách nhìn nhận vấn đề dưới
-                      nhiều khía cạnh để tìm ra giải pháp "win-win" (đôi bên
-                      cùng có lợi).
-                      <br /><br />
-                      &#8226; Thành thạo các công cụ văn phòng (Google Sheets,
-                      Docs, Gmail...) để quản lý cơ sở dữ liệu đối tác và soạn
-                      thảo văn bản, email chuyên nghiệp.
-                      <br /><br />
-                      &#8226; Đề cao sự trung thực, trách nhiệm và cam kết đồng
-                      hành hết mình để nhận Giấy chứng nhận (Certificate) có xác
-                      nhận của Nhà trường - một điểm cộng lớn cho hồ sơ năng lực
-                      cá nhân.
-                    </p>
-                  </div>
+                      chứng nhận xác nhận năng lực sau nhiệm kỳ.</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="generalBenefits">
-          <h2>QUYỀN LỢI</h2>
-          <span>
-            <p>
-              &#8226; <b>Được trao giấy chứng nhận (có xác nhận)</b> từ Ban Chủ
+        <div class="department-parent">
+          <div class="subTitle">
+            <div class="subDescription">
+              <span>BAN SỰ KIỆN</span>
+              <span>#ban_su_kien&nbsp;&nbsp;&nbsp;#events&nbsp;&nbsp;&nbsp;#pg</span>
+              <span></span>
+            </div>
+          </div>
+          <div class="children">
+            <div class="department">
+              <div class="subTitle">
+                <div class="subDescription">
+                  <span>BAN CHƯƠNG TRÌNH</span>
+                  <span>#ban_chuong_trinh&nbsp;&nbsp;&nbsp;#program&nbsp;&nbsp;&nbsp;#event_planner</span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="requirements">
+                <div class="container">
+                  <span>MÔ TẢ CÔNG VIỆC</span>
+                  <ul class="requirements-list">
+                    <li>Đóng vai trò là những "kiến trúc sư" và "đạo diễn"
+                      đứng sau sân khấu; trực tiếp lên ý tưởng (concept), kịch
+                      bản và timeline cho các sự kiện lớn (Mùa Yêu, Talkshow
+                      Hướng nghiệp, Tập san...).</li>
+                    <li>Hiện thực hóa ý tưởng từ trên giấy ra thực tế; qua
+                      đó có cơ hội làm việc trực tiếp với các diễn giả, thạc sĩ,
+                      tiến sĩ và nghệ sĩ khách mời trong quá trình điều phối
+                      chương trình.</li>
+                    <li>Xây dựng bảng biểu, phân chia nhân sự và kiểm soát
+                      tiến độ; giúp bạn rèn luyện toàn diện kỹ năng quản lý dự
+                      án và khả năng ứng biến linh hoạt trước mọi tình huống.</li>
+                    <li>Phối hợp chặt chẽ với ban Hậu cần và Đối ngoại để
+                      đảm bảo sự kiện diễn ra liền mạch, chuyên nghiệp và để lại
+                      dấu ấn sâu đậm trong lòng người tham dự.</li>
+                  </ul>
+                </div>
+                <div class="container">
+                  <span>YÊU CẦU CHUYÊN MÔN</span>
+                  <ul class="requirements-list">
+                    <li>Có nhiều ý tưởng mới mẻ, góc nhìn phù hợp với thị
+                      hiếu học sinh và mong muốn được thử sức trong một môi
+                      trường năng động, tôn trọng sự khác biệt.</li>
+                    <li>Biết cách sắp xếp thời gian khoa học, chịu được áp
+                      lực cao và thành thạo các công cụ hỗ trợ công việc (Google
+                      Docs, Sheets...).</li>
+                    <li>Năng động, "giữ cái đầu lạnh" để xử lý tình huống
+                      phát sinh và đề cao tinh thần teamwork để cùng kết nối với
+                      những người bạn chung đam mê.</li>
+                    <li>Có tinh thần trách nhiệm cao, không làm chậm trễ
+                      tiến độ chung và cam kết hoạt động hết mình để nhận Giấy
+                      chứng nhận (Certificate) từ Nhà trường sau nhiệm kỳ.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="department">
+              <div class="subTitle">
+                <div class="subDescription">
+                  <span>BAN HẬU CẦN</span>
+                  <span>#ban_hau_can&nbsp;&nbsp;&nbsp;#logistics&nbsp;&nbsp;&nbsp;#support&nbsp;&nbsp;&nbsp;#event_management</span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="requirements">
+                <div class="container">
+                  <span>MÔ TẢ CÔNG VIỆC</span>
+                  <ul class="requirements-list">
+                    <li>Lên danh sách, quản lý và điều phối toàn bộ hệ
+                      thống vật dụng, trang thiết bị (âm thanh, ánh sáng, đạo
+                      cụ...) cho sự kiện; qua đó rèn luyện tư duy tối ưu hóa chi
+                      phí và quản lý tài sản hiệu quả.</li>
+                    <li>Trực tiếp thực hiện công tác mua sắm, set-up và
+                      bài trí không gian; bạn chính là những "đôi tay" biến
+                      những ý tưởng trên giấy của Ban Chương trình thành trải
+                      nghiệm thực tế sống động.</li>
+                    <li>Đảm bảo mọi hoạt động diễn ra suôn sẻ, an toàn và
+                      đúng tiến độ; tham gia trực tiếp vào các khâu tổng duyệt,
+                      chạy chương trình để tích lũy kinh nghiệm xử lý tình huống
+                      (problem-solving) dưới áp lực cao.</li>
+                    <li>Là hậu phương vững chắc, chuẩn bị từ những chi
+                      tiết nhỏ nhất để các bộ phận khác tỏa sáng; môi trường làm
+                      việc đề cao tinh thần đồng đội và sự gắn kết như một gia
+                      đình.</li>
+                  </ul>
+                </div>
+                <div class="container">
+                  <span>YÊU CẦU CHUYÊN MÔN</span>
+                  <ul class="requirements-list">
+                    <li>Có tinh thần trách nhiệm cực cao, sự tỉ mỉ, cẩn
+                      thận và luôn chủ động - vì Hậu cần là "xương sống" quyết
+                      định sự chỉn chu và an toàn của mọi sự kiện.</li>
+                    <li>Có tư duy tổ chức, sắp xếp công việc khoa học; khả
+                      năng làm việc nhóm tốt và giao tiếp hiệu quả để phối hợp
+                      nhịp nhàng với các ban khác.</li>
+                    <li>Năng động, sức khỏe tốt, không ngại khó khăn và
+                      sẵn sàng "lăn xả" trong các buổi set-up/thu dọn; (Lợi thế)
+                      Có phương tiện di chuyển cá nhân để chủ động trong việc
+                      vận chuyển và mua sắm.</li>
+                    <li>Mong muốn gắn bó lâu dài, coi trọng giá trị tập
+                      thể và cam kết hoàn thành nhiệm vụ để nhận được Giấy chứng
+                      nhận (Certificate) ghi nhận những nỗ lực thầm lặng nhưng
+                      vô giá của bạn.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="department">
+              <div class="subTitle">
+                <div class="subDescription">
+                  <span>BAN ĐỐI NGOẠI</span>
+                  <span>#ban_doi_ngoai&nbsp;&nbsp;&nbsp;#external_relations&nbsp;&nbsp;&nbsp;#partnership&nbsp;&nbsp;&nbsp;#sponsorship</span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="requirements">
+                <div class="container">
+                  <span>MÔ TẢ CÔNG VIỆC</span>
+                  <ul class="requirements-list">
+                    <li>Chủ động tìm kiếm, liên hệ và thiết lập quan hệ
+                      với các Nhà tài trợ tiềm năng; đây là cơ hội vàng để bạn
+                      rèn luyện kỹ năng đàm phán, thuyết phục và bản lĩnh khi
+                      làm việc với các đối tác lớn.</li>
+                    <li>Chịu trách nhiệm quản lý nguồn quỹ, lập bảng sao
+                      kê và báo cáo tài chính chi tiết; giúp bạn tiếp cận sớm
+                      với tư duy quản lý ngân sách và sự minh bạch trong quy
+                      trình kế toán.</li>
+                    <li>Đảm bảo quyền lợi và duy trì mối quan hệ tốt đẹp
+                      với Nhà tài trợ trước - trong - sau sự kiện; qua đó học
+                      cách chăm sóc khách hàng và mở rộng mạng lưới quan hệ
+                      (network) chất lượng.</li>
+                    <li>Là cầu nối đại diện cho sự chuyên nghiệp của HNK
+                      khi làm việc với bên ngoài; hoạt động trong môi trường
+                      thân thiện nhưng chuyên nghiệp, nơi bạn được đào tạo bài
+                      bản về kiến thức đối ngoại.</li>
+                  </ul>
+                </div>
+                <div class="container">
+                  <span>YÊU CẦU CHUYÊN MÔN</span>
+                  <ul class="requirements-list">
+                    <li>Hoạt bát, tự tin, ngôn từ linh hoạt và có khả năng
+                      thuyết phục người khác - những tố chất tiên quyết của một
+                      nhà ngoại giao tương lai.</li>
+                    <li>Nhạy bén, ứng biến linh hoạt trước các tình huống
+                      phát sinh với đối tác và biết cách nhìn nhận vấn đề dưới
+                      nhiều khía cạnh để tìm ra giải pháp "win-win" (đôi bên
+                      cùng có lợi).</li>
+                    <li>Thành thạo các công cụ văn phòng (Google Sheets,
+                      Docs, Gmail...) để quản lý cơ sở dữ liệu đối tác và soạn
+                      thảo văn bản, email chuyên nghiệp.</li>
+                    <li>Đề cao sự trung thực, trách nhiệm và cam kết đồng
+                      hành hết mình để nhận Giấy chứng nhận (Certificate) có xác
+                      nhận của Nhà trường - một điểm cộng lớn cho hồ sơ năng lực
+                      cá nhân.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="generalBenefits">
+        <h2>QUYỀN LỢI</h2>
+        <span>
+          <ul class="benefits-list">
+            <li><b>Được trao giấy chứng nhận (có xác nhận)</b> từ Ban Chủ
               nhiệm CLB Phát thanh, Báo chí, Truyền thông và Sự kiện trường Phổ
               thông Năng khiếu và đại diện Nhà trường khi hoạt động tích cực và
-              hoàn thành tốt các công việc được giao trong suốt nhiệm kỳ.<br /><br />
-              &#8226; <b>Được trực tiếp tham gia tổ chức và trải nghiệm</b> các
+              hoàn thành tốt các công việc được giao trong suốt nhiệm kỳ.</li>
+            <li><b>Được trực tiếp tham gia tổ chức và trải nghiệm</b> các
               sự kiện quy mô lớn của trường như chuỗi sự kiện Valentine "Mùa
               Yêu", Tập san, và Talkshow Hướng nghiệp; qua đó tích lũy kinh
               nghiệm thực chiến và rèn luyện các kỹ năng chuyên môn lẫn kỹ năng
-              mềm. <br /><br />
-              &#8226; <b>Được mở rộng mối quan hệ (networking)</b>, không chỉ
+              mềm.</li>
+            <li><b>Được mở rộng mối quan hệ (networking)</b>, không chỉ
               với những người bạn, anh chị có chung đam mê và nhiệt huyết trong
               CLB mà còn có cơ hội làm việc, tiếp xúc với các chuyên gia, diễn
-              giả và nghệ sĩ khách mời thông qua các dự án sự kiện thường niên.
-              <br /><br />
-              &#8226; <b>Được thăng tiến</b> và tiếp tục đồng hành cùng CLB với
+              giả và nghệ sĩ khách mời thông qua các dự án sự kiện thường niên.</li>
+            <li><b>Được thăng tiến</b> và tiếp tục đồng hành cùng CLB với
               tư cách là những thành viên nòng cốt hoặc ứng cử vào các vị trí
               thuộc Ban Chủ nhiệm CLB Phát thanh, Báo chí, Truyền thông và Sự
-              kiện trường Phổ thông Năng khiếu ở nhiệm kỳ tiếp theo.
-            </p>
-          </span>
-          <span>
-            <a
-              class="applyNow"
-              href="https://forms.gle/ZBv9YmR9RPH5ufGBA"
-              target="_blank"
-            >
-              LỐI VÀO HNK
-            </a>
-          </span>
-        </div>
-      </div>
-      <div class="footer">
-        <span> THEO DÕI CHÚNG MÌNH TẠI </span>
+              kiện trường Phổ thông Năng khiếu ở nhiệm kỳ tiếp theo.</li>
+          </ul>
+        </span>
         <span>
-          <a href="mailto:humansofnangkhieu@ptnk.edu.vn" target="_blank">
-            <i class="far fa-envelope"></i>
-            <p></p>
-          </a>
-          <a
-            href="https://www.facebook.com/profile.php?id=61584035608788"
-            target="_blank"
-          >
-            <i class="fab fa-facebook"></i>
+          <a class="applyNow" href="https://forms.gle/ZBv9YmR9RPH5ufGBA" target="_blank">
+            LỐI VÀO HNK
           </a>
         </span>
       </div>
     </div>
-    <script src="script.js"></script>
-    <script src="../script.js"></script>
-  </body>
+    <div class="footer">
+      <span> THEO DÕI CHÚNG MÌNH TẠI </span>
+      <span>
+        <a href="mailto:humansofnangkhieu@ptnk.edu.vn" target="_blank">
+          <i class="far fa-envelope"></i>
+          <p></p>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61584035608788" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </span>
+    </div>
+  </div>
+  <script src="recruitment.js"></script>
+  <script src="../script.js"></script>
+</body>
+
 </html>

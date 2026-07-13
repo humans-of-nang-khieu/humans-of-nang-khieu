@@ -19,17 +19,11 @@
 // }
 $(document).ready(function () {
   $(".subTitle").click(function () {
-    $(this).next().slideToggle(200);
     $(this).toggleClass("active");
 
-    console.log(this.className);
-    if (this.className === "subTitle active") {
-      $(this).parent().siblings().children(".subTitle").next().slideUp(200);
-      $(this)
-        .parent()
-        .siblings()
-        .children(".subTitle")
-        .attr("class", "subTitle");
+    if ($(this).hasClass("active")) {
+      // Close other accordions in the same sibling group
+      $(this).parent().siblings().children(".subTitle").removeClass("active");
     }
   });
 });
